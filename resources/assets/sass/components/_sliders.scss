@@ -1,0 +1,285 @@
+
+.slick-slide {
+    height: 420px;
+    max-height: 420px;
+    margin: 0 20px;
+
+}
+
+
+
+.slider-header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+
+
+    h3{
+
+        color: $primary;
+
+    }
+
+    button{
+
+        background-color: transparent;
+        border: 1px solid $primary;
+        padding: 7px 20px;
+        font-weight: 600;
+
+    }
+
+}
+
+
+.slider-card-container,
+.card-style-one {
+
+
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    
+
+    .card {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #FFFFFF;
+        background-clip: border-box;
+        box-shadow: $zidniShadow;
+        border-radius: 5px;
+    }
+
+    
+
+    a:hover {
+        color: $primary;
+        text-decoration: none;
+    }
+
+
+
+    .card-img-top{
+
+        height: 220px;
+        max-height: 220px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+
+    }
+
+    .price{
+
+        text-align: right;
+    font-weight: bold;
+
+    }
+}
+
+
+
+
+.card-img-info{
+
+    height: 220px;
+    max-height: 220px;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+
+    .card-preview-icon{
+
+        height: 50px;
+        width: 50px;
+        transform: translateY(0px) scale(0);
+
+    }
+
+    p{
+
+        color: #FFFFFF;
+        transform: translateY(-20%) scale(0.7);
+        margin: .8rem 0;
+        
+    }
+
+}
+
+
+
+.slider-card-container:hover .card-img-info,
+.card-style-one:hover .card-img-info{
+
+
+    opacity: 1;
+    background-color: rgba(1, 39, 63, 0.5);
+
+}
+
+
+.slider-card-container:hover .card-preview-icon,
+.card-style-one:hover .card-preview-icon{
+
+    height: 50px;
+    width: 50px;
+    transform: translateY(0px) scale(1);
+}
+
+.slider-card-container:hover .card-img-info p,
+.card-style-one:hover .card-img-info p{
+    transform: translateY(0px) scale(1);
+}
+
+
+
+.card-img-info * {
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+
+
+
+
+
+
+
+.slick-disabled {
+    display: none !important;
+}
+
+
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 53%;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #c5343400;
+    border: none;
+    outline: none;
+    background: #FFF;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+}
+
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    color: $primary;
+    outline: none;
+    background: $white;
+    opacity: .9;
+}
+
+
+.slick-next{
+
+    right: 5px;
+
+}
+
+
+.slick-prev {
+    left: 5px;
+    z-index: 10;
+}
+
+
+.slick-prev:before, .slick-next:before {
+    font-family: $fontAwesome;
+    font-size: 20px;
+    line-height: 1;
+    left: 1px;
+    opacity: 1;
+    position: relative;
+    color: $primary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.slick-prev:before{
+
+    font-weight: 900;
+     content: "\f104";
+
+}
+
+.slick-next:before{
+
+    font-weight: 900;
+     content: "\f105";
+
+}
+
+
+
+img.lazy {
+    display: block;
+    background-image: url('/images/loader.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+
+
+.slick-dots li.slick-active button:before {
+    opacity: .85;
+    color: $primary;
+}
+
+
+.slider-container{
+
+    position: relative;
+
+
+}
+
+
+.top_categories_slider_loading{
+
+    position: relative;
+    top: 0;
+    background-image: url(/images/loading-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+    background-color: transparent;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+}

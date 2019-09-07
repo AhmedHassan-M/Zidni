@@ -1,0 +1,669 @@
+
+
+#masters-degree-container{
+
+    .masters-degree-header{
+
+        height: 300px;
+        margin-bottom: 0;
+
+
+        @include media(">phone", "<=tablet") {
+            height: auto;
+            padding-bottom: 35px;
+        }
+
+    }
+
+    .pages-header-overlay{
+
+        background-color: $secondaryOverlay;
+
+    }
+
+    .pages-header-container{
+
+        width: 75%;
+
+        @include media(">phone", "<=tablet") {
+            width: 100%;
+        }
+
+
+    }
+
+
+}
+
+
+#courses-navbar-container{
+
+    padding: .5rem 3rem;
+    border-bottom: 1px solid #EEE;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+
+    @include media(">phone", "<=tablet") {
+
+        padding: .5rem 1rem;
+
+    }
+
+
+    #master-tabs{
+
+        margin: 0;
+
+
+        .nav-item{
+
+            @include media(">phone", "<=tablet") {
+
+                font-size: 12px;        
+            }
+
+
+            a{
+
+                @include media(">phone", "<=tablet") {
+
+                    padding: 7px 5px;
+                
+                }
+
+            }
+
+        }
+
+    }
+
+
+}
+
+
+#overview,
+#instructors,
+#degree-courses,
+#specialization-courses{
+
+    padding: 2rem 0;
+    background-color: $offWhite;
+
+}
+
+
+.overview-container{
+
+background-color: $white;
+padding: 2rem;
+border-radius: 5px;
+box-shadow: $zidniShadow;
+
+
+    .overview-info-container{
+
+        padding-bottom: 1.5rem;
+
+        h4{
+
+            font-size: 18px;
+            font-weight: 600;
+            padding-bottom: 1rem;
+            text-align: left;
+
+        }
+
+        p{
+
+
+
+        }
+
+        
+    }
+
+}
+
+
+.overview-card{
+
+    box-shadow: $zidniShadow;
+
+    @include media(">phone", "<=tablet") {
+        margin-top: 2rem;
+    
+    }
+
+    .card{
+
+
+        border: 0;
+        border-top: 3px solid $secondary;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        .card-header{
+
+            background-color: $white;
+            text-align: center;
+            font-weight: 600;
+
+
+        }
+
+
+        .card-info-item{
+
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: row;
+        
+
+
+            .card-text{
+
+                margin: 1rem 0;
+                font-weight: 600;
+    
+            }
+
+            .card-icon{
+
+                height: 25px;
+                margin-right: 15px;
+
+            }
+
+
+        }
+
+
+
+
+    }
+
+
+
+}
+
+
+
+.instructors-container{
+
+    .instructors-info-container{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        background-color: $white;
+        border-radius: 5px;
+        box-shadow: $zidniShadow;
+
+
+        @include media(">phone", "<=tablet") {
+            flex-direction: column;
+        }
+
+
+        .instructors-info-img{
+
+            flex: 1;
+            margin-right: 2rem;
+
+            @include media(">phone", "<=tablet") {
+                margin-right: 0rem;
+                margin-bottom: 1rem;
+
+            }
+
+
+            img{
+
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+
+            }
+
+        }
+
+    }
+
+
+}
+
+
+
+.instructors-info-description{
+
+    flex: 2;
+    margin-right: 2rem;
+
+    @include media(">phone", "<=tablet") {
+        margin-right: 0;
+        padding: 0 2rem;
+
+    }
+
+
+    .instructors-overview{
+
+        font-size: 14px;
+        text-align: justify;
+
+    }
+
+
+    .instructors-social-media{
+
+        @include media(">phone", "<=tablet") {
+            text-align: center;
+            margin-bottom: 15px;
+    
+        }
+
+
+
+
+        i{
+
+            font-size: 24px;
+            margin-right: 15px;
+
+        }
+    
+    }
+
+}
+
+
+
+.degree-courses-container{
+
+    box-shadow: $zidniShadow;
+    margin-bottom: 2rem;
+
+    .card{
+
+
+        border: 0;
+        border-top: 3px solid $secondary;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        .card-header{
+
+            background-color: $white;
+            text-align: left;
+            font-weight: 600;
+            padding: 2rem 0;
+            border: 0;
+
+            span{
+
+                padding: 7px 20px;
+                background-color: $secondary;
+                color: $primary;
+
+            }
+
+
+        }
+
+
+
+        .degree-courses-icons{
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+
+
+
+
+        .card-info-item{
+
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: row;
+            margin-right: 2rem;
+        
+
+
+            .card-text{
+
+                margin: 1rem 0;
+                font-weight: 600;
+    
+            }
+
+            .card-icon{
+
+                height: 17px;
+                margin-right: 15px;
+
+            }
+
+
+        }
+
+
+        h6{
+
+
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 0.75rem;
+
+        }
+
+        p{
+
+            font-size: 14px;
+
+        }
+
+
+        .take-only-coures{
+
+            p{
+
+                font-weight: bold;
+    
+    
+                a{
+    
+                    color: blue;
+                    font-size: 13px;
+    
+                }
+    
+            }
+
+        }
+
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+.pages-header{
+
+
+    height: 300px;
+    margin-bottom: 0;
+
+    .pages-header-container{
+
+        width: 100%;
+
+    }
+
+    .pages-header-overlay{
+
+        background-color: $secondaryOverlay;
+
+    }
+
+
+    .subscribe-button{
+
+        padding: .5rem 4rem;
+        margin-top: 10px;
+        font-weight: bold;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+.live-price{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 1rem;
+
+
+    img{
+
+        height: 25px;
+        margin-right: 10px;
+
+    }
+
+
+    .live-price{
+
+        color: #FFFFFF;
+        margin-bottom: 0;
+        font-weight: 700;
+
+    }
+
+    .pages-header-students{
+
+        color: #FFFFFF;
+        margin-bottom: 0;
+        margin-left: 4rem;
+
+    }
+
+}
+
+
+#live-streaming{
+
+
+    padding: 2rem 0;
+
+    .live-streaming-container{
+
+
+        height: 500px;
+        width: 100%;
+        background-color: $lightGray;
+        
+    }
+
+    .live-timer-container{
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+
+        .live-timer-header{
+
+            width: 50%;
+
+        }
+
+
+        .live-timer{
+
+            width: 30%;
+
+        }
+
+    }
+
+}
+
+
+
+.all-courses-header{
+
+    height: 200px;
+    overflow: hidden;
+
+    .all-corses-main-title{
+
+
+        display: flex;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+
+
+        h1{
+
+            font-size: 3rem;
+
+        }
+
+    }
+
+}
+
+
+
+
+
+.all-courses-container{
+
+    padding: 2rem 0;
+    overflow: hidden;
+
+
+}
+
+
+
+
+.all-courses-container{
+
+    .card-style-two{
+
+        padding: 0 2rem;
+        margin: 2rem 0;
+
+        .card-img-top{
+
+            height: 270px;
+            max-height: 270px;
+
+        }
+
+        .card-img-info{
+
+            height: 270px;
+            max-height: 270px;
+            top: 0;
+
+        }
+        
+        .card-title{
+
+            font-weight: 700;
+
+        }
+
+
+        .card-description{
+
+            margin: 1rem 0;
+            text-align: justify;
+            height: 100px;
+            overflow: hidden;
+
+        }
+
+
+        .price{
+
+            text-align: left;
+            font-weight: bold;
+
+        }
+
+
+        .image-overlay-container{
+
+            position: relative;
+
+
+            .card-img-overlay{
+
+                background-color: rgba(1, 39, 63, 0.2);
+
+            }
+
+
+        }
+
+
+    }
+
+
+}
+
+
+
+
+#all-live-sessions{
+
+    .card-style-two {
+        padding: 0 1rem;
+        margin: 2rem 0;
+    }
+
+    .live-timer-header{
+
+
+        h5{
+
+            font-weight: bold;
+
+        }
+
+    }
+
+
+    .subscribers{
+
+        text-align: right;
+        font-weight: 700;
+        margin: .5rem 0;
+
+    }
+
+}
+
+
+
+.live-sessions-header{
+
+    @include media(">phone", "<=tablet") {
+    
+        height: auto;
+        padding-bottom: 2rem;
+    
+    }
+
+
+}

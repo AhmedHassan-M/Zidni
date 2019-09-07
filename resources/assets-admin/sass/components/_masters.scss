@@ -1,0 +1,296 @@
+
+
+
+#addMasterContainer,
+#addSpecializationsContainer{
+
+    .form-group{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+}
+
+
+
+
+#AddMastersForm,
+#AddSpecializationsForm{
+
+
+    .form-control:focus{
+
+        border: 1px solid $primary !important;
+        background-color: $offWhite;
+
+    }
+
+
+    .sf-viewport{
+
+        border: 0;
+
+    }
+
+    .sf-step-name{
+
+        display: none;
+
+    }
+
+    .step-one,
+    .step-two {
+        width: 50%;
+        margin: auto;
+        padding: 1rem 0;
+
+        @include media(">phone", "<=tablet") {
+
+            width: 100%;
+    
+        }
+
+    }
+
+    .sf-controls{
+
+        padding: 0 0;
+        background-color: $primary;
+        -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+        border-radius: 0;
+        position: fixed;
+        bottom: 0;
+        width: 82%;
+        left: 240px;
+        right: 0;
+
+
+        @include media(">phone", "<=tablet") {
+
+            width: 100%;
+            left: 0;    
+        }
+
+
+    }
+
+    .sf-btn-next{
+
+        background-color: #FFF;
+        color: #01273f;
+        height: 30px;
+        line-height: 30px;
+        margin: 5px;
+        font-weight: bold;
+
+        &:after{
+
+            display: none;
+
+        }
+
+    
+    }
+
+
+    .sf-btn-prev{
+
+        background-color: #FFF;
+        color: #01273f;
+        height: 30px;
+        line-height: 30px;
+        margin: 5px;
+        font-weight: bold;
+
+        &:after{
+
+            display: none;
+
+        }
+
+    }
+
+
+
+    .sf-btn-finish{
+
+        background-color: #FFF;
+        color: #01273f;
+        height: 30px;
+        line-height: 30px;
+        margin: 5px;
+        font-weight: bold;
+
+        &:after{
+
+            display: none;
+
+        }
+
+    }
+
+
+
+    textarea{
+
+        resize: none;
+    
+    }
+
+    textarea.error {
+        border: 1px solid #D8000C !important;
+    }
+
+
+
+    
+}
+
+
+#AddMastersForm-box,
+#AddSpecializationsForm-box{
+
+    .sf-nav-wrap{
+
+        padding: 3rem 0;
+        background-color: #FFF;
+        -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        
+    }
+
+    .sf-nav {
+
+        top: 16px;
+
+    }
+    
+}
+
+
+
+
+
+body.menu-collapsed{
+
+
+    #AddSpecializationsForm .sf-controls {
+
+        width: 95.5%;
+        left: 60px;
+
+    
+    }
+
+
+    #AddSpecializationsForm .step-one {
+        width: 70%;
+    }
+
+
+
+}
+
+
+
+/* Edit Style */
+
+
+#edit-course-tabs{
+
+    border: 0;
+
+    .nav-item{
+
+        width: 33.333333%;
+        margin: 0;
+        text-align: center;
+
+
+        .nav-link {
+            padding: 12px 20px;
+            display: block;
+            background-color: rgba(1, 39, 63, 0.7);
+            border: 0;
+            color: #FFF;
+            border-radius: 0;
+        }
+
+
+        .nav-link.active {
+            padding: 12px 20px;
+            background-color: #01273f;
+            border-radius: 0;
+            border: 0;
+            color: #FFF;
+            font-weight: bold;
+        }
+
+    }
+
+
+}
+
+
+#edit-course-tabs-content{
+
+    padding: 2rem;
+
+}
+
+
+#EditMasterForm,
+#EditSpecializationsForm{
+
+    margin: 0;
+
+    .form-control:focus{
+
+        border: 1px solid $primary !important;
+        background-color: $offWhite;
+
+    }
+
+
+    .select2-container {
+        width: 100% !important;
+    }
+
+
+}
+
+
+.EditCoursesFormSubmit{
+
+    width: 100%;
+    text-align: right;
+    background-color: $primary;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 82%;
+    left: 240px;
+    right: 0;
+    z-index: 999;
+
+    button{
+
+        background-color: #fff;
+        color: $primary;
+        padding: 7px 35px;
+        font-weight: bold;
+    }
+
+}
+
+
+body.menu-collapsed .EditCoursesFormSubmit {
+    width: 95.5%;
+    left: 60px;
+}

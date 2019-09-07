@@ -1,0 +1,504 @@
+.university-nav-container {
+    max-width: 1600px !important;
+
+    .wsmenu-list {
+        padding: 0px 2rem;
+        justify-content: start;
+
+        &.wsmenu-list-en {
+            justify-content: flex-end;
+        }
+
+        .navtext{
+
+            span{
+
+                // font-size: 14px;
+
+            }
+        }
+
+        .active {
+            span {
+                color: #f1dd7e;
+            }
+
+            .main-user-name {
+                color: #f1dd7e !important;
+            }
+
+            i {
+                color: #f1dd7e;
+            }
+        }
+
+        .university-nav-dropdown {
+            max-width: 1600px;
+            position: relative;
+            padding: 0 26px 0 22px;
+            line-height: 50px !important;
+
+            .wsmenu-submenu {
+                right: auto;
+                left: -5px;
+
+                min-width: 200px;
+            }
+
+            .account-nav .main-user-name {
+                color: #fff;
+                margin-left: 0;
+
+                i {
+                    position: relative;
+                    left: 4px;
+                    top: 2px;
+                }
+            }
+        }
+
+        @media only screen and (min-width: 781px) {
+            .account-menu:after {
+                right: 60% !important;
+            }
+        }
+    }
+}
+
+.wsmenu-submenu li a {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.university-container {
+    padding: 2rem 5rem;
+    background-color: #fafafa;
+    background-image: url(/images/transparent-background.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.university-student-card {
+    .university-student-card-header {
+        position: relative;
+
+        .card-img-top {
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .student-image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $secondaryOverlay;
+            height: 150px;
+            position: absolute;
+            top: 0;
+
+            .student-image {
+                height: 125px;
+            }
+        }
+    }
+
+    .card-body {
+        padding: 0;
+
+        .card-title {
+            background-color: #01273f;
+            margin: 0;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            margin: 0 !important;
+
+            a{
+
+                color: #FFF;
+                i{
+
+                    margin-left: 1.2rem;
+                    float: right;
+                }
+
+                .fa-address-card {
+                    font-size: 22px;
+                }
+            }
+            &.card-title-en {
+                padding: 0.75rem 1rem;
+                font-size: 1.1rem;
+                a {
+                    i {
+                        margin-left: .6rem;
+                    }
+                }
+            }
+            
+
+        }
+
+        .list-group-item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            span {
+                flex: 1;
+            }
+
+            .label-span {
+                background-color: $primary;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                width: max-content;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.university-page-container {
+    .university-page-header {
+        background: $primary;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+
+        h4 {
+            margin: 0;
+        }
+
+        .breadcrumb {
+            .breadcrumb-item {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .university-page-container {
+        padding: 2rem;
+    }
+}
+
+.student-lesson-card {
+    .student-lesson-number {
+        background-color: $primary;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 270px;
+
+        img {
+            height: 55px;
+        }
+
+        span {
+            color: #fff;
+            font-weight: normal;
+        }
+    }
+
+    .card-body {
+        padding: 0;
+        height: 270px;
+        overflow: hidden;
+
+        .card-title {
+            background-color: #f7f7f7;
+            padding: 0.5rem 1.5rem;
+            color: #000;
+            margin: 0;
+            height: 15%;
+        }
+
+        .card-content {
+            height: 85%;
+
+            .list-group {
+                height: 100%;
+            }
+
+            .list-group-item {
+                padding: 0.3rem 1.3rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border-radius: 0;
+                flex: 1;
+
+                &:nth-child(1) {
+                }
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+
+                span {
+                    font-size: 14px;
+
+                    &:nth-child(1) {
+                        flex: 1;
+                    }
+
+                    &:nth-child(2) {
+                        flex: 2;
+                    }
+                }
+            }
+        }
+
+        .card-activity-content {
+            .list-group-item {
+                border-left: 0;
+
+                &:nth-child(1) {
+                    flex: 3;
+                    padding: 0.35rem 1.3rem;
+                }
+
+                &:nth-child(2) {
+                    flex: 9;
+                    align-items: start;
+                    overflow: hidden;
+                }
+
+                &:nth-child(3) {
+                    flex: 2;
+                }
+            }
+        }
+    }
+
+    .card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+
+        small {
+            padding: 0 2rem;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            font-size: 14px;
+        }
+    }
+}
+
+.student-pills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .nav-item {
+        flex: 1;
+        text-align: center;
+        background-color: #eee;
+
+        &:nth-child(1) {
+            margin-right: 1rem;
+        }
+
+        &:nth-child(2) {
+            margin-left: 1rem;
+        }
+    }
+
+    .nav-item .nav-link {
+        opacity: 0.7;
+    }
+
+    .nav-item .nav-link.active {
+        opacity: 1;
+    }
+}
+
+.courses-actions-list {
+    span {
+        font-size: 14px;
+
+        &:nth-child(1) {
+            flex: 2 !important;
+        }
+    }
+}
+
+.student-courses-card {
+    .card-footer {
+        .instructor-review {
+            color: $primary;
+            font-size: 14px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .course-actions {
+            .btn {
+                &:nth-child(1) {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.student-resources {
+    .list-group-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        i {
+            font-size: 20px;
+        }
+    }
+}
+
+.edit__student__form {
+    .list-group-item {
+        .form-group {
+            flex: 1;
+            margin: 0;
+        }
+
+        .intl-tel-input {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+    }
+}
+
+#edit__student__form {
+    margin: 0;
+
+    .form-submit {
+        padding: 1rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.student-document-container {
+    .modal-body {
+        padding: 0;
+    }
+
+    .student-document-form {
+        margin: 0;
+
+        .dropify-wrapper .dropify-preview {
+            background-color: transparent;
+        }
+
+        .form-group {
+            margin: 0;
+        }
+    }
+
+    .modal-footer {
+    }
+}
+
+.course-rating-form {
+    margin: 0;
+
+    .rating_1,
+    .rating_2 {
+        flex: 1;
+        align-items: center;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .rating-title {
+        flex: 1;
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+    }
+
+    .rating_1 input,
+    .rating_2 input {
+        position: absolute;
+        visibility: hidden;
+        display: none;
+    }
+
+    .icon::before {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .rating_1 > label:before,
+    .rating_2 > label:before {
+        position: relative;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f005";
+        display: block;
+        color: #ccc;
+        background: -webkit-linear-gradient(-45deg, #d9d9d9 0%, #b3b3b3 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
+
+    .rating_1 > label:hover:before,
+    .rating_1 > label:hover ~ label:before,
+    .rating_1 > label.selected:before,
+    .rating_1 > label.selected ~ label:before {
+        color: #f0ad4e;
+        background: -webkit-linear-gradient(-45deg, #fcb551 0%, #d69a45 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
+
+    .rating_2 > label:hover:before,
+    .rating_2 > label:hover ~ label:before,
+    .rating_2 > label.selected:before,
+    .rating_2 > label.selected ~ label:before {
+        color: #f0ad4e;
+        background: -webkit-linear-gradient(-45deg, #fcb551 0%, #d69a45 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
+}
+
+.modal-header {
+    align-items: center;
+
+    .close {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+#raitingModal {
+    .form-group {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+}

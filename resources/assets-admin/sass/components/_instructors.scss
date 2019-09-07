@@ -1,0 +1,92 @@
+.instructorsTable-overview{
+
+
+    .overview-container{
+        height: 42px;
+        overflow: hidden;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+
+        .overview-content{
+
+            height: inherit;
+
+        }
+    
+
+    }
+
+}
+
+
+#overviewModal{
+
+
+    .modal-title{
+
+        float: left;
+
+    }
+
+
+}
+
+
+
+// add form
+
+
+#addInstructorsForm,
+#editInstructorsForm{
+
+    padding: 3rem;
+    width: 70%;
+    margin: auto;
+
+    @include media(">phone", "<=tablet") {
+
+        width: 100%;
+
+    }
+
+
+    #instructorsOverview.error{
+
+        border: 1px solid #D8000C !important;
+
+    }
+
+
+    .instructors-sm{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        @include media(">phone", "<=tablet") {
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;    
+        }
+
+        .form-group{
+
+            flex-grow: 1;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            @include media(">phone", "<=tablet") {
+
+                width: 100%;
+  
+            }
+
+        }
+
+    }
+
+}

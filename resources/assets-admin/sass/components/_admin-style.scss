@@ -1,0 +1,1619 @@
+// Asmin style
+
+
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content > span.menu-title, body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content a.menu-title {
+    right: -240px;
+    width: 240px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: left;
+    background-color: $primary;
+    border-color: $primary;
+    padding: 11px 20px;
+}
+
+
+table.dataTable tbody td.select-checkbox:before, table.dataTable tbody th.select-checkbox:before {
+    content: ' ';
+    margin-top: 4px;
+    margin-left: -5px;
+    border: 1px solid #000000;
+    border-radius: 0px;
+}
+
+
+.menu-item,
+.menu-title{
+
+    text-transform: capitalize;
+
+}
+
+/* TOP NAVBAR */
+
+.header-navbar .navbar-header {
+    background-color: $primary;
+    .branding-container {
+        width: 100%
+    }
+    .navbar-brand {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include media(">phone", "<=tablet") {
+            width: auto;
+        }
+        img {
+            height: 45px;
+            width: auto;
+            position: relative;
+            top: -3px;
+        }
+    }
+}
+
+
+.navbar-container{
+
+    background-color: #FFF !important;
+
+}
+
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation > li > a > i {
+
+    font-size: 14px;
+    height: 30px;
+
+}
+
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .navigation > li > a {
+    padding: 5px;
+    text-align: center;
+}
+
+
+body.vertical-layout.vertical-menu.menu-collapsed .menu-footer{
+
+    display: none;
+
+}
+
+.header-navbar .navbar-container {
+    padding: 0px 1rem 0 0rem;
+    height: 4rem;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    background: inherit;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation > li > a > span {
+    font-size: 13px;
+}
+
+
+.menu-footer{
+
+    text-align: center;
+    padding-top: 10px;
+
+    p{
+
+        font-size: 12px;
+        margin: 0
+
+    }
+
+}
+
+
+.dashboard-item{
+
+    border-top: 5px solid $secondary;
+
+}
+
+
+.messages-icon{
+
+    position: relative;
+    top: -2px;
+
+    i{
+
+        font-size: 18px;
+
+    }
+}
+
+.notification-icon{
+
+
+    font-size: 18px;
+
+}
+
+
+.header-navbar .navbar-container ul.nav li a.dropdown-user-link .user-name {
+    margin-bottom: 0;
+
+}
+
+.dropdown-toggle::after{
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\F0D7";
+    top: -14px;
+    right: 0px;
+}
+
+.header-navbar .navbar-container ul.nav li a.nav-link-label {
+    padding: 1.4rem 1rem 1rem 2rem;
+}
+
+.dropdown-messages,
+.dropdown-notification{
+
+
+    .avatar img {
+        height: 50px;
+        border: 0 none;
+        border-radius: 1000px;
+        width: 50px;
+        max-width: 50px;
+    }
+
+    .media-left {
+        padding-right: 30px;
+        padding-top: 0;
+
+        i{
+
+            font-size: 24px;
+            position: relative;
+            top: 10px;
+            left: 0px;
+            right: 0;
+            bottom: 0;
+            border: 2px solid #01273f;
+            height: auto;
+            width: auto;
+            background-color: #FFF;
+            padding: 0.7rem;
+
+        }
+
+    }
+
+}
+
+
+.come-soon{
+
+    padding: 3rem 0;
+    text-align: center;
+
+
+    h1{
+
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+    }
+
+    img{
+
+        margin-bottom: 20px;
+
+    }
+
+}
+
+
+
+
+/* table styles */
+
+
+.tabel-option{
+
+    padding: 1rem 3rem;
+
+    @include media(">phone", "<=tablet") {
+
+        padding: 1rem 0rem;
+
+
+    }
+
+
+    .dropdown-toggle::after {
+        top: -10px;
+        right: -3px;
+    }
+
+
+    .buttons-collection{
+
+        @include media(">phone", "<=tablet") {
+
+            float: none;
+    
+        }
+    
+
+    }
+
+
+}
+
+
+
+.tabel-search{
+
+    padding: 1rem 3rem;
+
+    @include media(">phone", "<=tablet") {
+
+        padding: 0rem 0rem;
+
+
+    }
+
+    label{
+
+        font-size: 14px !important;
+
+    }
+
+
+    input{
+
+        display: inline-block;
+        width: 250px !important;
+        padding: 10px;
+    
+
+    }
+
+}
+
+.table-info{
+
+    .dataTables_info{
+
+        padding: 0 2rem;
+    
+    }
+
+}
+
+
+.table-lenght{
+
+    .dataTables_length{
+
+        text-align: right;  
+        padding: 0 6rem;
+
+        @include media(">phone", "<=tablet") {
+
+            padding: 1rem 0 0 0;
+            text-align: right !important;
+        }
+
+    }
+
+}
+
+
+.table-container{
+
+    padding: 0;
+
+}
+
+
+.table-pag{
+
+    padding: 1rem 3rem;
+}
+
+
+
+.selected td.select-checkbox:before,
+.selected th.select-checkbox:before {
+
+
+    border: 1px solid $white !important;
+    border-radius: 0px;
+
+}
+
+table.dataTable tr.selected td.select-checkbox:after,
+table.dataTable tr.selected th.select-checkbox:after {
+    font-weight: 900;
+    content: "\f00c";
+    font-family: $fontAwesome;
+    text-align: center;
+    text-shadow: none;
+    font-size: 14px;
+    position: relative;
+    top: 11px;
+}
+
+
+table.dataTable tbody>tr.selected, table.dataTable tbody>tr>.selected{
+
+    background-color: $primary
+
+}
+
+
+
+
+
+.page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
+    z-index: 2;
+    color: #FFF;
+    cursor: default;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: 0;
+    white-space: nowrap;
+
+    @include media(">phone", "<=tablet") {
+
+        text-align: left;
+        padding: 0;
+
+    }
+
+}
+
+.highlight {
+    background-color: #EEE;
+}
+
+
+.table-info, .table-info > td, .table-info > th {
+    background-color: #FFF !important;
+}
+
+
+.options-container{
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+
+
+    .show-options{
+
+        display: block
+    
+    
+    }
+    
+    
+    .hide-options{
+    
+        display: none;
+
+        @include media(">phone", "<=tablet") {
+
+            display: block;
+
+
+        }
+    
+    }
+
+}
+
+
+table.dataTable.hover tbody>tr.selected:hover, table.dataTable.hover tbody>tr>.selected:hover, table.dataTable.display tbody>tr.selected:hover, table.dataTable.display tbody>tr>.selected:hover {
+    background-color: $primary;
+}
+
+
+table.dataTable td, table.dataTable th {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    vertical-align: middle;
+}
+
+
+.dt-button-collection {
+
+    padding: 0;
+
+
+    .dropdown-item{
+
+        padding: 5px 20px;
+
+    }
+
+}
+
+
+/* inbox table */
+
+
+#inboxTable{
+
+
+    tbody td.select-checkbox:before, tbody th.select-checkbox:before {
+        margin-top: 10px;
+        margin-left: -6px;
+    }
+
+
+    tr.selected td.select-checkbox:after, tr.selected th.select-checkbox:after {
+
+        margin-top: 0px;
+    }
+
+    .inboxTable-message{
+
+
+        .message-container{
+            height: 42px;
+            overflow: hidden;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        
+
+        }
+
+    }
+
+}
+
+
+
+#inboxMessageModal{
+
+
+    .modal-title{
+
+        float: left;
+
+    }
+
+
+}
+
+
+
+
+
+/* All Admins table */
+
+
+#allAdminsTable{
+
+
+    tr.selected td.select-checkbox:after, tr.selected th.select-checkbox:after {
+        top: 1px;
+    }
+
+    td{
+
+        height: 60px;
+
+    }
+
+
+
+}
+
+
+/* Add Admins */
+
+#addAdminsForm{
+
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+
+
+    @include media(">phone", "<=tablet") {
+
+        width: 100%;
+
+    }
+
+}
+
+
+#newAdminShowPassword{
+
+    float: right;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+
+form select.error{
+
+    border: 1px solid #D8000C !important;
+
+}
+
+
+
+
+/* Add Category */
+
+
+#addCategoryForm{
+
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+
+
+    @include media(">phone", "<=tablet") {
+
+        width: 100%;
+
+    }
+
+}
+
+
+
+
+table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selected th.select-checkbox:after {
+    top: 1px;
+}
+
+
+
+.add-button{
+
+    position: relative;
+    top: -5px;
+
+}
+
+
+
+.pretty .state label:after,
+.pretty .state label:before {
+
+    right: 0;
+
+}
+
+.pretty.p-icon .state .icon {
+    right: 0;
+    color: #FFF;
+    font-size: 12px !important;
+    position: absolute !important;
+    top: 2px !important;
+    left: 2px !important;
+}
+
+.pretty {
+    margin-right: 0;
+    display: block;
+    width: auto;
+    margin: auto 50%;
+}
+
+
+.pretty label {
+
+    height: 15.9px;
+    width: 15px;
+
+
+}
+
+
+.pretty.p-icon input:checked~.state label:before {
+    border-color: #FFF;
+    background-color: $primary;
+}
+
+
+.pretty input:checked ~ .state.p-maincolor label:after,
+.pretty.p-toggle .state.p-maincolor label:after {
+    background-color: $primary;
+}
+
+
+.pretty .state label:before {
+    border-color: rgba(1, 39, 63, 0.6) !important;
+    border-radius: 6px !important;
+}
+
+
+.pretty label.error {
+
+    font-weight: bold;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+
+
+/* Add Roles Style */
+
+
+#add-new-role{
+
+
+    margin: 0;
+
+    .form-body{
+
+        padding: 2rem 3rem;
+
+    }
+
+    #newRoleName{
+
+        width: 50%;
+
+        @include media(">phone", "<=tablet") {
+
+            width: 100%;
+    
+        }
+
+
+    }
+
+    
+    .form-optins{
+
+        background-color: $primary;
+        padding: 15px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+
+        button{
+
+            margin: 0 1rem;
+
+        }
+
+
+        #reset-roles{
+
+            background-color: transparent;
+            border: 1px solid #FFF;
+            color: #FFF;
+            padding: 7px 25px;
+
+        }
+
+        #done-roles{
+
+            background-color: #FFF;
+            color: $primary;
+            padding: 7px 30px;
+            border: 1px solid #FFF;
+            font-weight: bold;
+
+        }
+
+    }
+
+
+}
+
+
+
+#addRolesTable{
+
+    .table {
+        max-width: 100%;
+        border-right: 1px solid #e3ebf3;
+    }
+
+
+    .table tbody th {
+        background-color: $primary;
+        color: #FFF;
+        padding: 20px;
+        width: 33.3333333%;
+        font-size: 12px;
+    }
+
+    .table thead th:nth-child(1){
+
+        background-color: #01273f;
+        border-top: 5px solid #f1dd7e;
+        color: #FFF;
+        padding: 15px 20px;
+        text-align: left;
+
+    }
+
+
+    .table thead th{
+
+        text-align: center;
+
+    }
+
+    .table td, .table th {
+        vertical-align: middle;
+    }
+
+
+
+}
+
+
+
+// Content edit
+
+
+.content-edit-container{
+
+
+
+    .submit-content{
+
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+
+    }
+
+}
+
+
+
+// Sales Reports
+
+
+
+#salesReportContainer{
+
+
+    .salesReportTitle{
+
+        margin: 1rem 0;
+
+        h4{
+
+            font-weight: bold;
+
+        }
+
+    }
+
+
+    .salesReportBody{
+
+        background-color: #FFF;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+        padding: 2rem;
+        border-top: 5px solid #f1dd7e;
+        margin-bottom: 20px;
+
+        h5{
+
+            font-weight: bold;
+
+        }
+
+
+        .salesReportTotal{
+
+            p{
+
+                margin: 20px 0;
+
+            }
+
+        }
+
+
+
+        .enrolmentItemContainer{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 25px;
+            margin: 20px 0px;
+
+
+            p{
+
+                font-weight: bold;
+
+            }
+
+
+            span{
+
+                font-size: 16px;
+
+            }
+
+        }
+
+
+        .salesReportMoney{
+
+            p{
+
+                margin: 20px 0;
+
+
+            }
+
+        }
+
+    }
+
+
+}
+
+
+
+// announcement
+
+
+#announcement{
+
+
+    .modal-dialog{
+
+        width: 100%;
+
+    }
+
+    .modal-header{
+
+        background-color: $primary;
+
+        h5{
+
+            color: #FFF;
+            float: left;
+
+        }
+
+
+        button{
+            color: #FFF;
+            opacity: .8;
+        }
+
+    }
+
+}
+
+
+// profile 
+
+
+.dropdown-user{
+
+    .dropdown-menu{
+
+        padding: 0;
+
+    }
+
+}
+
+
+.profile-top{
+
+    background-color: #FFF;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    border-top: 5px solid #f1dd7e;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    .profile-img{
+
+        margin-right: 20px;
+
+        img{
+
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            height: 100px;
+
+        }
+
+    }
+
+
+    .profile-info{
+
+        h5{
+
+            margin: 0;
+            font-size: 18px;
+
+        }
+
+
+        p{
+
+            margin-top: 10px;
+            margin-bottom: 0;
+
+        }
+
+    }
+
+
+}
+
+
+#profile-tabs{
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 0;
+    background-color: #FFF;
+
+
+    li{
+
+        flex: 1;
+        text-align: center;
+        border: 0;
+        margin: 0;
+
+        a{
+
+            border: 0;
+            border-radius: 0;
+            color: $primary;
+            font-weight: bold;
+
+        }
+
+
+        .nav-link.active{
+
+            border-bottom: 3px solid #f1dd7e;
+            color: #FFF;
+            padding: 15px;
+            background-color: #01273fe0;
+
+        }
+
+    }
+
+}
+
+
+#editAdminAccountForm{
+
+
+    margin: 10px 0;
+
+
+    .email-change-container {
+        position: relative;
+        .input-group-btn {
+            position: absolute;
+            top: 0;
+            right: 34px;
+    
+            button{
+    
+                height: 38px;
+            }
+    
+        }
+    }
+
+    .form-control {
+        border: 1px solid #D4D4D4;
+        color: #5A5A5A;
+        height: 38px;
+    }
+    
+
+
+}
+
+
+.tabs-content-container {
+    background-color: #FFF;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 2rem;
+
+    .tabs-content-header {
+        text-align: center;
+        border-bottom: 1px solid $borderColor;
+        padding: 1rem 0;
+        h4 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+}
+
+
+
+#editEmailModal{
+
+
+    .modal-content{
+
+        width: 600px;
+
+    }
+
+    .modal-header{
+
+        svg{
+
+            font-size: 16px;
+            position: relative;
+            top: -1px;
+        }
+
+    }
+
+
+    .modal-title {
+        margin: 0;
+        line-height: 1.45;
+        float: left;
+    }
+
+    .warning-text{
+
+        text-align: center;
+        color: #ec5152;
+        font-size: 12px;
+        font-weight: bold;
+
+    }
+
+}
+
+
+
+
+// upload img
+
+
+
+#image-upload-container{
+
+
+    .dropify-wrapper{
+
+        border: 0;
+    
+    }
+    
+    .dropify-wrapper .dropify-preview .dropify-render img{
+    
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+    
+    }
+    
+    
+    .dropify-wrapper .dropify-preview {
+    
+        display: block;
+    }
+    
+    
+    .dropify-wrapper ~ .dropify-errors-container ul li {
+        margin-left: 20px;
+        color: #ec5152;
+        font-weight: bold;
+        font-size: 14px;
+    
+    
+    }
+    
+    
+    .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-infos-message{
+    
+        color: #FFF;
+        opacity: 1;
+        font-size: 14px;
+    
+    }
+    
+
+}
+
+
+
+// notifications Form
+
+
+
+.notifications-control-container{
+
+    padding: 1rem;
+
+    .small-title {
+        padding: 2rem 0;
+        border-bottom: 0;
+
+        h4{
+
+            font-size: 14px;
+            margin: 0;
+            font-weight: 500;
+
+        }
+    }
+
+}
+
+
+#adminNotificationsForm{
+
+
+    overflow: hidden;
+
+    .form-group{
+
+        margin: 0;
+        border: 1px solid $primary;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-bottom: 1.5rem;
+
+    }
+
+
+    .pretty input:checked ~ .state.p-success .icon, .pretty input:checked ~ .state.p-success .svg, .pretty.p-toggle .state.p-success .icon, .pretty.p-toggle .state.p-success .svg {
+        color: #fff;
+        stroke: #fff;
+        font-size: 11px;
+        top: 2px;
+        left: 3px;
+    }
+
+
+    .pretty input:checked ~ .state.p-success label:after, .pretty.p-toggle .state.p-success label:after {
+        background-color: $primary !important;
+    }
+
+    .pretty .state label{
+
+        margin-left: 6px;
+
+    }
+
+    .pretty .state label:before, .pretty .state label:after{
+
+        border-radius: 5px;
+
+    }
+
+
+    .pretty {
+        margin-right: 0;
+        display: block;
+        width: auto;
+        margin: 0;
+    }
+
+
+    .pretty.p-icon .state .icon {
+        right: 0;
+        color: #FFF;
+        left: 1px !important;
+        top: -1px !important;
+    }
+
+}
+
+
+
+.statistics{
+
+
+    position: relative;
+    overflow: hidden;
+
+
+    .statistics-counter{
+
+        font-size: 2.5rem;
+        font-weight: bold;        
+    }
+
+
+    .statistics-title{
+
+        font-size: 1rem;
+        font-weight: bold;
+    
+    }
+
+
+    i{
+
+        color: $primary;
+
+    }
+
+
+    .statistics-link{
+
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+
+        a{
+            text-transform: uppercase;
+            font-weight: bold;
+            border: 1px solid #01273f57;
+            padding: 10px 15px;
+            border-radius: 2px;
+            color: $primary;
+            transform: translateY(100%)
+            translateY(-88px)
+            translateZ(0);
+            transition: transform 0.2s ease-in-out;
+
+        }
+    }
+
+
+    &:hover{
+
+
+        .statistics-link{
+
+
+            opacity: 1;
+
+
+            a{
+
+                transform: translateY(0) translateZ(0);
+
+
+            }
+
+        }
+
+
+    }
+    
+}
+
+
+
+.zidni-site-icon{
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include media(">phone", "<=tablet") {
+
+        position: relative;
+        top: 15px;
+
+    }
+
+
+    img{
+
+        height: 20px;
+        width: 20px;
+        position: relative;
+        left: -5px;
+        top: -2px;
+
+    }
+
+
+    a{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        i{
+
+            top: 1px;
+            margin: 10px;
+            position: relative;
+
+        }
+
+        p{
+
+            text-transform: capitalize;
+            font-weight: normal;
+            margin: 0;
+        }
+
+    }
+
+}
+
+
+#allCategoriesTable td{
+
+    height: 60px !important;
+
+}
+
+
+.header-navbar .navbar-container .dropdown-menu-media {
+
+    padding: 0;
+
+}
+
+
+.header-navbar .navbar-container .dropdown-menu-media .list-group .list-group-item {
+    padding: 1rem;
+    border: none;
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    @include mainTranstion();
+
+    &:hover{
+        background-color: #efefef;
+    }
+}
+
+
+.notifications-container {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	.notifications-img {
+		i {
+            font-size: 30px;
+            position: relative;
+            top: 5px;
+            left: 0px;
+            right: 0;
+            bottom: 0;
+            border: 2px solid #01273f;
+            height: auto;
+            width: auto;
+            background-color: #FFF;
+            padding: 1rem;
+            border-radius: 30px;
+            color: #01273f;
+		}
+	}
+
+	.notifications-info{
+
+		text-align: left;
+		margin: 0 15px;
+
+		p{
+
+			margin: 0;
+            font-size: 12px;
+            color: #01273f;
+
+        }
+        
+
+        h4{
+
+            color: #01273f;
+
+        }
+
+		span{
+
+            font-size: 10px;
+            color: #01273f;
+
+		}
+
+	}
+}
+
+.all-notifications-header{
+
+    text-align: center;
+    padding: 1rem 0;
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+}
+
+
+.all-notifications-content{
+
+
+    .all-notifications-data{
+
+
+        ul{
+
+            list-style-type: none;
+            padding: 0;
+    
+
+        }
+
+
+
+        .notifications-container{
+
+            justify-content: start;
+
+        }
+
+        .notifications-info{
+
+            p{
+
+                margin: 10px 0;
+
+            }
+
+        }
+
+
+        .notifications-link{
+            border: none;
+            border-top: 1px solid #E6E6E6;
+            border-bottom: 1px solid #E6E6E6;
+            @include mainTranstion();
+            display: block;
+            &:hover{
+                background-color: #efefef;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+.admin-switch-container{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .nav-item{
+
+        flex: 1;
+        margin: 0 !important;
+        text-align: center;
+
+
+
+        .nav-link{
+            border: 0;
+            color: $primary;
+            display: flex !important;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .nav-link.active{
+
+            background-color: $secondary !important;
+            border-radius: 0 !important;
+            color: $primary !important;
+
+        }
+    
+    }
+}
+
+
+
+.menu-collapsed{
+
+    .admin-switch-container{
+
+        flex-direction: column;
+        overflow: hidden;
+
+        .nav-item{
+
+            width: 100%;
+
+            span{
+
+                display: none !important;
+
+            }
+
+
+            i{
+
+                margin: 0 !important;
+                padding: 1rem;
+                font-size: 1.2rem;
+            }
+
+        }
+
+    }
+
+
+}
+
+
+.navbar-nav .navbar-brand{
+
+    padding: 10px 6px !important;
+}

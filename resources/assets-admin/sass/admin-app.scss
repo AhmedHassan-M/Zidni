@@ -1,0 +1,48 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "./settings/base";
+@import "./settings/include-media";
+
+// Bootstrap
+@import './components/bootstrap.min';
+@import './components/bootstrap-extended.min';
+
+@import "~dropify/dist/css/dropify.css";
+
+@import "./settings/settings";
+
+@import './components/pace';
+
+// @import './other//pickers/classic.css';
+// @import './other//pickers/classic.date.css';
+
+
+@import "./components/app";
+@import "./components/vertical-menu";
+@import "./components/vertical-overlay-menu";
+
+@import './other/step-form-wizard-all';
+
+@import "./components/admin-style";
+@import "./components/admin-login";
+
+@import "./components/courses";
+@import "./components/masters";
+
+@import "./components/quizzes";
+@import "./components/instructors";
+
+
+@import "./components/admin-responsive";
+
+
+@import "./components/university/university";
+
+
+@import "./components/university/admin";
+
+
+@import "./components/university/instructor";

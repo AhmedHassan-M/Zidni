@@ -1,0 +1,577 @@
+.pages-header {
+    @include pagesHeader();
+}
+
+.breadcrumb {
+    @include pagesBreadcrumb();
+}
+
+.pages-header-overlay {
+    @include pagesOverlay();
+}
+
+
+#user-profile-container{
+
+    padding: 2rem 0;
+    background-color: $offWhite;
+
+
+
+.dropify-wrapper{
+
+    border: 0;
+
+}
+
+.dropify-wrapper .dropify-preview .dropify-render img{
+
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+
+.dropify-wrapper .dropify-preview {
+
+    display: block;
+}
+
+
+.dropify-wrapper ~ .dropify-errors-container ul li {
+    margin-left: 20px;
+    color: #ec5152;
+    font-weight: bold;
+    font-size: 14px;
+
+
+}
+
+
+.dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-infos-message{
+
+    color: #FFF;
+    opacity: 1;
+    font-size: 14px;
+
+}
+
+
+}
+
+
+.profile-page-header{
+
+    height: 150px !important;
+    overflow: hidden;
+
+    @include media(">phone", "<=tablet") {
+
+        height: auto !important;
+                
+    }
+
+}
+
+.pages-header-container {
+    z-index: $zIndex1;
+    position: relative;
+    h1 {
+        color: $white;
+    }
+    .breadcrumb {
+        a {
+            color: $white;
+        }
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #FFF;
+    content: "/";
+}
+
+#main-profile-tabs {
+    padding: 0;
+    background-color: #FFF;
+    border-radius: 5px;
+    border-top: 5px solid $secondary;
+    @include cardStyle();
+
+    @include media(">phone", "<=tablet") {
+
+        margin-bottom: 2rem;
+                
+    }
+
+
+    .profile-tabs-img {
+        text-align: center;
+        padding: 1rem 0;
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .profile-tabs-name {
+        h3 {
+            text-align: center;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $borderColor;
+            margin: 0;
+        }
+    }
+}
+
+#profile-page-links {
+    .nav-link {
+        background-color: $white;
+        color: $primary;
+        border-radius: 0;
+        border-bottom: 1px solid $borderColor;
+        padding: 12px 15px;
+    }
+    .nav-link.active {
+        background-color: $profileColor;
+        color: $white;
+        border-radius: 0;
+    }
+}
+
+.tabs-content-container {
+    background-color: #FFF;
+    border-radius: 5px;
+    @include cardStyle();
+    @include borderTop();
+
+    .tabs-content-header {
+        text-align: center;
+        border-bottom: 1px solid $borderColor;
+        padding: 1rem 0;
+        h4 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+}
+
+.account-form {
+    padding: 3rem;
+}
+
+.email-change-container {
+    position: relative;
+    .input-group-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        button{
+
+            height: 38px;
+        }
+
+    }
+
+
+
+}
+
+#editEmailModal{
+
+    .modal-header{
+
+        svg{
+
+            font-size: 16px;
+            position: relative;
+            top: -1px;
+        }
+
+    }
+
+    .warning-text{
+
+        text-align: center;
+        color: #ec5152;
+        font-size: 12px;
+        font-weight: bold;
+
+    }
+
+}
+
+
+
+
+.tabs-messages-header{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid $borderColor;
+
+    .tabs-messages-top{
+
+        margin-left: 15px;
+
+        h5{
+
+
+            font-size: 18px;
+        }
+
+        p{
+            margin: 0;
+            font-size: 12px;
+        }
+
+    }
+
+}
+
+
+
+
+
+#messages-container{
+
+    max-height: 400px;
+    background-color: $white;
+    position: relative;
+    width: auto;
+    height: 400px;
+
+    .message-item{
+
+        background-color: #fafafa;
+        margin: 25px;
+        padding: 15px;
+        border-radius: 5px;
+
+
+        span{
+
+            font-size: 12px;
+            font-weight: bold;
+
+            i{
+
+                margin-right: .5rem;
+            }
+        }
+
+
+        h3{
+
+            text-transform: capitalize;
+            margin: 1rem 0;
+
+        }
+
+        p{
+
+            margin: 10px 0;
+            font-size: 16px;
+            text-align: left;
+
+        }
+    
+    }
+
+}
+
+
+.ps__rail-y{
+
+    right: 0 !important;
+    left: auto !important;
+}
+
+
+
+.save_profile_photo{
+
+    text-align: center;
+    padding: 1rem;
+
+
+
+}
+
+
+.purchase-history-item{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+
+
+    .purchase-history-item-img{
+
+        flex: 1;
+        position: relative;
+
+
+        @include media(">phone", "<=tablet") {
+display: none;        }
+
+        img{
+
+            height: 75px;
+            width: 100%;
+            border-radius: 5px;
+            object-fit: cover;
+            object-position: center;
+
+        }
+
+
+    }
+
+
+    .purchase-history-item-title{
+
+        flex: 2;
+
+        h5{
+
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: 15px;
+
+        }
+
+    }
+
+}
+
+
+.purchase-history-item-container{
+
+    width: 45%
+
+}
+
+
+.purchase-table{
+
+    td{
+        height: 130px;
+        vertical-align: middle;
+
+        p{
+
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+    }
+
+
+    th{
+
+        font-size: 14px;
+        font-weight: 600;
+
+    }
+
+}
+
+
+
+
+// notifications Form
+
+
+
+.notifications-control-container{
+
+    padding: 1rem;
+
+    .small-title {
+        padding: 2rem 0;
+        border-bottom: 0;
+
+        h4{
+
+            font-size: 14px;
+            margin: 0;
+            font-weight: 500;
+
+        }
+    }
+
+}
+
+
+#notificationsForm{
+
+    .form-group{
+
+        margin: 0;
+        border: 1px solid $primary;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+
+    }
+
+
+
+    .pretty {
+
+        @include media(">phone", "<=tablet") {
+        
+            white-space: normal;
+        
+        }
+
+    }
+
+
+    .pretty input:checked ~ .state.p-success .icon, .pretty input:checked ~ .state.p-success .svg, .pretty.p-toggle .state.p-success .icon, .pretty.p-toggle .state.p-success .svg {
+        color: #fff;
+        stroke: #fff;
+        font-size: 11px;
+        top: 2px;
+        left: 3px;
+
+        @include media(">phone", "<=tablet") {
+        
+            top: 3px;
+        }
+
+    }
+
+
+    .pretty input:checked ~ .state.p-success label:after, .pretty.p-toggle .state.p-success label:after {
+        background-color: $primary !important;
+    }
+
+    .pretty .state label{
+
+        margin-left: 6px;
+
+        @include media(">phone", "<=tablet") {
+        
+            margin-left: 0;
+            line-height: 21px;
+        
+        }
+
+
+    }
+
+    .pretty .state label:before, .pretty .state label:after{
+
+        border-radius: 5px;
+
+
+        @include media(">phone", "<=tablet") {
+        
+            top: 0;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#multiple-datasets .league-name {
+    margin: 0 20px 5px 20px;
+    padding: 3px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+
+  span.twitter-typeahead .tt-menu, span.twitter-typeahead .tt-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 1rem;
+    color: #373a3c;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem; }
+  
+  span.twitter-typeahead .tt-suggestion {
+    display: block;
+    width: 100%;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #373a3c;
+    text-align: inherit;
+    white-space: nowrap;
+    background: none;
+    border: 0; }
+     span.twitter-typeahead .tt-suggestion:focus, .dropdown-item:hover, span.twitter-typeahead .tt-suggestion:hover {
+      color: #2b2d2f;
+      text-decoration: none;
+      background-color: #f5f5f5; }
+    span.twitter-typeahead .active.tt-suggestion, span.twitter-typeahead .tt-suggestion.tt-cursor, .dropdown-item.active:focus, span.twitter-typeahead .active.tt-suggestion:focus, span.twitter-typeahead .tt-suggestion.tt-cursor:focus, .dropdown-item.active:hover, span.twitter-typeahead .active.tt-suggestion:hover, span.twitter-typeahead .tt-suggestion.tt-cursor:hover {
+      color: #fff;
+      text-decoration: none;
+      background-color: #0275d8;
+      outline: 0; }
+    span.twitter-typeahead .disabled.tt-suggestion, .dropdown-item.disabled:focus, span.twitter-typeahead .disabled.tt-suggestion:focus, .dropdown-item.disabled:hover, span.twitter-typeahead .disabled.tt-suggestion:hover {
+      color: #818a91; }
+    span.twitter-typeahead .disabled.tt-suggestion:focus, .dropdown-item.disabled:hover, span.twitter-typeahead .disabled.tt-suggestion:hover {
+      text-decoration: none;
+      cursor: not-allowed;
+      background-color: transparent;
+      background-image: none;
+      filter: "progid:DXImageTransform.Microsoft.gradient(enabled = false)"; }
+  span.twitter-typeahead {
+    width: 100%; }
+    .input-group span.twitter-typeahead {
+      display: block !important; }
+      .input-group span.twitter-typeahead .tt-dropdown-menu {
+        top: 32px !important; }
+    .input-group.input-group-lg span.twitter-typeahead .tt-dropdown-menu {
+      top: 44px !important; }
+    .input-group.input-group-sm span.twitter-typeahead .tt-dropdown-menu {
+      top: 28px !important; }
+  

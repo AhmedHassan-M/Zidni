@@ -1,0 +1,103 @@
+#viewExercise {
+    .form-control:disabled {
+        background-color: $white;
+        cursor: default;
+    }
+    .edit-btn {
+        background-color: $white;
+        color: $primary;
+        padding: 7px 35px;
+        font-weight: bold;
+        margin: 5px;
+        text-transform: uppercase;
+    }
+}
+
+#studentsModal {
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        background-color: $primary;
+        color: $white;
+        &::after {
+            display: none;
+        }
+        .close {
+            color: $white;
+            span {
+                vertical-align: text-top;
+            }
+        }
+    }
+    .modal-body {
+        padding: 0;
+    }
+    .students_list {
+        margin-bottom: 0;
+        .single_student {
+            .student_link {
+                margin: 0;
+                padding: 10px 15px;
+                background-color: $white;
+                color: $primary;
+                min-width: 350px;
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid #EEE;
+                &:hover {
+                    background-color: $secondary;
+                    color: $primary;
+                }
+                &.student_disabled {
+                    opacity: 1;
+                    background-color: #F2F2F2;
+                    color: #777;
+                    cursor: default;
+                    &:hover {
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.quizSubmitContainer #quizStudentScore {
+    background-color: $primary;
+    color: $white;
+    padding: 7px 35px;
+    font-weight: bold;
+    margin: 5px;
+    cursor: auto;
+    i {
+        margin-right: 10px;
+    }
+    span {
+        margin-right: 5px;
+    }
+}
+
+.state.p-success.o1 {
+    opacity: 1 !important;
+}
+.student_answer {
+    &.correct {
+        background-color: #5cb85c !important;
+        color: $white;
+    }
+    &.wrong {
+        background-color: rgba(242, 38, 19, .8) !important;
+        color: $white;
+    }
+}
+.student_comment {
+    margin-bottom: 0;
+}
+
+.footer-hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+.quizQuestionsContainer {
+    height: auto;
+}

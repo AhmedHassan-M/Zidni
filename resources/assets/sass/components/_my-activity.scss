@@ -1,0 +1,484 @@
+
+
+.my-activity-container{
+
+    background-color: $offWhite;
+    padding: 3rem 0;
+
+}
+
+
+.latest-activity-container{
+
+    @include cardStyle();
+    @include borderTop();
+    margin-bottom: 2rem;
+
+
+
+    .latest-activity-title{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+
+            font-size: 14px;
+
+        }
+
+                
+    }
+
+    .latest-activity-courses{
+
+        padding: 1rem;
+
+
+
+        a{
+
+            &:last-child .latest-activity-item{
+
+                border: 0;
+                padding: 1rem 0 1rem 0rem;
+            }
+
+        }
+        
+
+
+        .latest-activity-item{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            @include mainTranstion();
+            padding: 1rem 0;
+            border-bottom: 1px solid $lightGray;
+
+
+
+
+
+
+            .latest-activity-item-img{
+
+                flex: 1;
+                position: relative;
+
+                img{
+
+                    height: 100px;
+                    width: 100%;
+                    border-radius: 5px;
+                    object-fit: cover;
+                    object-position: center;
+
+                }
+
+
+                .play-icon{
+
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(1, 39, 63, 0.45);
+                    border-radius: 5px;
+                    @include mainTranstion();
+                    opacity: 0;
+
+
+
+                    i{
+
+                        font-size: 28px;
+                        color: #FFF;
+
+                    }
+
+                }
+
+            }
+
+            
+
+
+            &:hover{
+
+                @include mainTranstion();
+
+                .play-icon{
+    
+                    opacity: 1;
+
+                    @include mainTranstion();
+
+                }
+    
+            } 
+
+
+
+
+
+            .latest-activity-item-title{
+
+                flex: 1;
+
+                h5{
+
+                    margin-bottom: 0;
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-left: 15px;
+
+                }
+
+
+                p{
+
+                    margin-left: 15px;
+                    margin-bottom: 0;
+                    font-size: 11px;
+                    font-weight: 600;
+                    margin-top: 8px;
+
+
+                }
+
+
+            }
+
+        }
+    }
+
+
+}
+
+
+
+
+
+// right side 
+
+
+
+.show-courses-container{
+
+    @include cardStyle();
+    @include borderTop();
+
+    .my-activity-slider{
+
+        padding: 2rem 0 .5rem 0;
+        border-bottom: 1px solid $lightGray;        
+
+
+        .slick-slide {
+            height: 360px;
+            max-height: 360px;
+            margin: 0px 10px;
+        }
+
+
+        .card-img-top{
+
+            height: 160px;
+            max-height: 160px;
+
+        }
+
+
+        .card-img-info{
+
+            height: 160px;
+            max-height: 160px;
+        }
+
+
+        .card-title {
+            margin-bottom: 0.75rem;
+            font-size: 14px;
+        }
+
+
+        .live-timer-header h5 {
+            text-align: center;
+            font-size: 12px;
+            margin: 0;
+            padding-top: 1rem;
+            width: 40%;
+            border-bottom: 1px solid #01273f;
+            padding-bottom: 5px;
+        }
+
+
+        .live-timer{
+
+            padding: 15px 0;
+
+        }
+
+        .price{
+            font-size: 12px;
+        }
+
+    }
+
+}
+
+
+// other courses
+
+
+.activity-other-courses{
+
+    #activity-other-courses-tabs{
+
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 1rem;
+        margin: 1rem 0;
+
+        .nav-item{
+
+            text-align: left;
+
+            .nav-link{
+
+                border-radius: 0px;
+                background-color: #FFF;
+                color: $primary;
+                border-bottom: 3px solid $white;
+                padding: 5px 0;
+                margin-right: 2rem;
+
+            }
+
+            .nav-link.active{
+
+                background-color: #FFF;
+                color: $primary;
+                border-bottom: 3px solid $secondary;
+    
+            }
+
+
+        }
+
+
+    }
+
+
+
+    #activity-categories-tabs{
+
+
+        align-items: center;
+        margin: 1rem 0;
+        display: flex;
+        padding: 0.5rem 0;
+        justify-content: center;
+
+
+        .activity-categories-tabs-item{
+
+            list-style-type: none;
+            cursor: pointer;
+
+        }
+
+
+        .nav-link{
+
+            border-radius: 0px;
+            background-color: #FFF;
+            color: $primary;
+            padding: 5px 0;
+            margin-right: 2rem;
+            font-size: 14px;
+            font-weight: 500;
+
+        }
+
+        .nav-link.active{
+
+            background-color: #FFF;
+            color: #01273f;
+            border-bottom: 3px solid #f1dd7e;
+
+        }
+
+
+    }
+    
+}
+
+
+
+.activity-categories-items-container{
+
+
+    .activity-categories-item{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        @include mainTranstion();
+        padding: 1rem;
+        border-bottom: 1px solid $lightGray;
+
+
+
+        @include media(">phone", "<=tablet") {
+            flex-direction: column;
+        }
+
+
+        .activity-categories-item-img{
+
+            flex: 1;
+            position: relative;
+
+            @include media(">phone", "<=tablet") {
+                margin-bottom: 20px;
+            }
+
+    
+            img{
+    
+                height: 125px;
+                width: 100%;
+                border-radius: 5px;
+                object-fit: cover;
+                object-position: center;
+
+
+            }
+    
+    
+            .play-icon{
+    
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(1, 39, 63, 0.45);
+                border-radius: 5px;
+                opacity: 0;
+                @include mainTranstion();
+    
+    
+    
+                i{
+    
+                    font-size: 28px;
+                    color: #FFF;
+                    @include mainTranstion();
+
+    
+                }
+    
+            }
+    
+        }
+    
+        
+    
+    
+        &:hover{
+    
+            @include mainTranstion();
+    
+            .play-icon{
+    
+                opacity: 1;
+    
+                @include mainTranstion();
+    
+            }
+    
+        } 
+    
+    
+    
+    
+    
+        .activity-categories-item-info{
+    
+            flex: 2;
+    
+            h5{
+    
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: 600;
+                margin-left: 15px;
+    
+            }
+    
+    
+            p{
+    
+                margin-left: 15px;
+                margin-bottom: 0;
+                font-size: 11px;
+                font-weight: 600;
+                margin-top: 8px;
+    
+    
+            }
+
+
+            .activity-categories-stat{
+
+                justify-content: space-around;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 15px;
+
+                .activity-categories-stat-item{
+
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+
+                    i{
+
+                        color: $primary;
+
+                    }
+
+
+                    p{
+
+                        margin: 0 15px;
+
+                    }
+                
+
+                }
+
+            }
+    
+    
+        }
+
+
+    }
+}
+

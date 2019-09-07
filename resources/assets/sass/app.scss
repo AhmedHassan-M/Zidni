@@ -1,0 +1,83 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+// Variables
+@import "./settings/include-media";
+@import "./settings/settings";
+@import "./settings/base";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import '~jquery-ui/themes/base/all.css';
+
+@import '~jquery-ui/themes/base/progressbar.css';
+
+
+@import "~dropify/dist/css/dropify.css";
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@import "~bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.css";
+
+@import "~perfect-scrollbar/css/perfect-scrollbar.css";
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
+
+@import '~simplebar/dist/simplebar.css';
+
+
+@import '~intl-tel-input/build/css/intlTelInput.css';
+
+
+@import './other/step-form-wizard-all';
+
+@import "./other/lity";
+
+@import "./components/navbar";
+@import "./components/hero";
+@import "./components/registration";
+@import "./components/footer";
+
+
+@import "./components/login";
+
+@import "./components/password-reset";
+
+@import "./components/profile";
+
+@import "./components/sliders";
+
+@import "./components/masters";
+
+
+@import "./components/all-categories";
+
+
+@import "./components/courses";
+
+
+@import "./components/instructor";
+
+
+@import "./components/contact-us";
+
+
+@import "./components/my-courses";
+
+@import "./components/my-activity";
+
+@import "./components/certificate";
+
+@import "./components/notifications";
+
+@import "./components/other-pages";
+
+
+@import "./components/homepage-media";
+
+
+@import "./components/university-registration";
+@import "./components/university";
+
+@import "./components/university/course_material";

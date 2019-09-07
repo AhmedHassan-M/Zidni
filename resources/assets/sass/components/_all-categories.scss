@@ -1,0 +1,164 @@
+.all-categories-header {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    overflow: hidden;
+    height: 125px;
+
+    @include media(">phone", "<=tablet") {
+
+        height: 125px;
+                
+    }
+
+
+}
+
+#all-categories {
+    padding: 3rem 0;
+    background-color: $offWhite;
+
+
+    .stuck {
+        position: fixed;
+        top: 10%;
+        width: 255px;
+
+        @include media(">phone", "<=tablet") {
+        
+            position: relative;
+            top: 0;
+            width: 100%;                    
+        }
+
+
+        @include media(">tablet", "<=desktop") {
+            width: 210px;
+        }
+
+    }
+
+    .stuck-stop{
+
+        position: absolute;
+        bottom: 2%;
+        width: 255;
+
+        @include media(">tablet", "<=desktop") {
+            width: 210px;
+        }
+
+    
+    }
+
+}
+
+#all-categories-tabs {
+
+    @include cardStyle();
+    @include borderTop();
+
+    list-style-type: none;
+    padding: 0;
+
+
+    @include media(">phone", "<=tablet") {
+        margin-bottom: 40px;                   
+    }
+
+    .all-categories-count {
+
+        padding: 1rem;
+        text-align: center;
+        margin: 0;
+        background-color: $lightGray;
+        font-size: 14px;
+
+        span{
+
+            margin-right: 5px;
+
+        }
+
+    }
+    a {
+
+        border: 0;
+        border-radius: 0;
+        padding: 12px 20px;
+        border-bottom: 1px solid $borderColor;
+
+
+    }
+
+    .nav-item{
+
+        cursor: pointer;
+
+    }
+
+
+    .active{
+
+        background-color: $primary;
+        color: #FFF;
+
+    }
+}
+
+
+#all-categories{
+
+    .card-style-one{
+
+        margin-bottom: 2rem;
+
+
+        .card-title{
+
+            font-size: 18px;
+            height: 21px;
+            overflow: hidden;
+            margin-bottom: 21px;
+
+        }
+
+        .card-img-top{
+
+            height: 170px;
+            max-height: 170px;
+
+            @include media(">phone", "<=tablet") {
+                height: 200px;
+                max-height: 200px;               
+            }
+
+
+        }
+
+
+        .card-description{
+
+            height: 24px;
+            overflow: hidden;
+
+        }
+
+        .card-img-info{
+
+
+            height: 170px;
+            max-height: 170px;
+
+            @include media(">phone", "<=tablet") {
+                height: 200px;
+                max-height: 200px;               
+            }
+
+
+        }
+
+    }
+
+}
+
+

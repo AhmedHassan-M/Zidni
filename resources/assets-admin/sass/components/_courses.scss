@@ -1,0 +1,717 @@
+/* Start All Courses Page */
+
+#courses-summary {
+    .courses-summary-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2rem 0;
+
+        @include media(">phone", "<=tablet") {
+            flex-direction: column;
+            justify-content: start;
+            align-items: flex-start;
+        }
+    }
+
+    .courses-summary-item {
+        border-right: 1px solid #ccc;
+        padding-right: 10px;
+
+        @include media(">phone", "<=tablet") {
+            border-right: 0;
+            padding-right: 0px;
+            padding-left: 10px;
+        }
+
+        h5 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .courses-summary-item:last-child {
+        border-right: none;
+    }
+}
+
+/* End All Courses Page */
+
+/* loading styles */
+.load-box {
+    height: 516px; /* add height of wizard that you usually expect */
+    position: relative;
+    overflow: hidden;
+    overflow-x: hidden !important;
+}
+.load-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px; /* half width of loading text - to center */
+    margin-top: -20px; /* half height of loading text - to center */
+}
+.load-wizard-box {
+    visibility: hidden;
+}
+/* end loading styles */
+
+/* spinner from http://tobiasahlin.com/spinkit/, you can use image or another css spiner or erase this if loading text is enought*/
+.cssspinner {
+    width: 40px;
+    height: 40px;
+    background-color: $primary;
+
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+    animation: sk-scaleout 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+/* end of spinner */
+
+#AddCoursesContainer {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+}
+
+/* Start Top Nav */
+
+#AddCoursesForm-box {
+    .sf-nav-wrap {
+        padding: 3rem 0;
+        background-color: #fff;
+        -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+    }
+
+    .sf-nav {
+        top: 16px;
+    }
+}
+
+/* End Top Nav */
+
+#AddCoursesForm {
+    .sf-viewport {
+        border: 0;
+    }
+
+    .sf-step-name {
+        display: none;
+    }
+
+    .step-one {
+        width: 50%;
+        margin: auto;
+        padding: 1rem 0;
+
+        @include media(">phone", "<=tablet") {
+            width: 100%;
+        }
+    }
+
+    .sf-controls {
+        padding: 0 0;
+        background-color: $primary;
+        -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+        border-radius: 0;
+        position: fixed;
+        bottom: 0;
+        width: 82%;
+        left: 240px;
+        right: 0;
+
+        @include media(">phone", "<=tablet") {
+            width: 100%;
+            left: 0;
+        }
+    }
+
+    .sf-btn-next {
+        background-color: #fff;
+        color: #01273f;
+        height: 30px;
+        line-height: 30px;
+        margin: 5px;
+        font-weight: bold;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .sf-btn-prev {
+        background-color: #fff;
+        color: #01273f;
+        height: 30px;
+        line-height: 30px;
+        margin: 5px;
+        font-weight: bold;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .sf-btn-finish {
+        background-color: #fff;
+        color: #01273f;
+        height: 30px;
+        line-height: 30px;
+        margin: 5px;
+        font-weight: bold;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    textarea.error {
+        border: 1px solid rgba(226, 148, 152, 1) !important;
+    }
+}
+
+.weekContainer {
+    background-color: $primary;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 5px;
+
+    .weekTitle {
+        h4 {
+            margin: 0;
+            color: #fff;
+        }
+    }
+
+    .addOtherWeek {
+        a {
+            color: #fff;
+        }
+    }
+}
+
+.fields_wrapper {
+    padding: 2rem 0;
+}
+
+.add_button {
+    margin-left: 20px;
+    font-weight: bold;
+    color: $primary;
+}
+
+#accordion {
+    padding: 0 2rem;
+
+    @include media(">phone", "<=tablet") {
+        padding: 0 0rem;
+    }
+}
+
+.week-card {
+    .card-header {
+        background-color: $primary;
+        border-radius: 5px;
+
+        h5 {
+            color: #fff;
+            display: flex;
+
+            button {
+                text-align: left;
+                width: 100%;
+                color: #fff;
+                font-weight: bold;
+            }
+
+            .collapsed {
+                .fa-plus {
+                    display: inline-block;
+                }
+
+                .fa-minus {
+                    display: none;
+                }
+            }
+
+            .icon-week-status {
+                display: inline-block;
+                margin-right: 15px;
+            }
+
+            .fa-plus {
+                display: none;
+            }
+
+            .fa-minus {
+                display: inline-block;
+            }
+
+            a {
+                color: #fff;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .week-content {
+        padding: 2rem;
+    }
+
+    .card-body {
+        .weekNameContainer {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+
+            @include media(">phone", "<=tablet") {
+                width: 100%;
+            }
+
+            label {
+                font-weight: bold;
+            }
+        }
+
+        .weekLessonContainer {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+
+            @include media(">phone", "<=tablet") {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .form-group {
+                width: 35%;
+                margin: 0 15px;
+                text-align: center;
+                font-weight: bold;
+
+                @include media(">phone", "<=tablet") {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+.addMoreWeeksContainer {
+    text-align: center;
+    margin: 2rem 0;
+
+    .addMoreWeeks {
+        font-weight: bold;
+        background-color: $primary;
+        padding: 10px 20px;
+        color: #fff !important;
+        border-radius: 5px;
+    }
+}
+
+.addOtherLessonsContainer {
+    text-align: center;
+    margin: 2rem 0;
+
+    a {
+        font-weight: bold;
+        background-color: $primary;
+        padding: 10px 20px;
+        color: #fff !important;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+}
+
+.weekLessonWrapper {
+    .weekLessonContainer {
+        margin: 1.5rem 0;
+    }
+}
+
+#week_header_1 {
+    .deleteWeekButton {
+        display: none;
+    }
+}
+
+.deleteWeekButton {
+    color: #fff;
+    margin-top: 0 !important;
+    display: flex;
+    align-items: center;
+
+    @include media(">phone", "<=tablet") {
+        margin-right: 12px;
+    }
+}
+
+.deleteInputRow {
+    margin-top: 30px;
+    color: #e44c4c !important;
+
+    @include media(">phone", "<=tablet") {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    i {
+        @include media(">phone", "<=tablet") {
+            font-size: 18px;
+        }
+    }
+}
+
+.previewInputLink {
+    margin-top: 30px;
+    color: $primary !important;
+
+    @include media(">phone", "<=tablet") {
+        margin-top: 10px;
+    }
+
+    i {
+        @include media(">phone", "<=tablet") {
+            font-size: 18px;
+        }
+    }
+}
+
+// .weekLessonContainer{
+
+//     display: none !important;
+
+// }
+
+.weekLessonWrapper .weekLessonContainer {
+    display: flex !important;
+}
+
+/* input styles & select 2 */
+
+#AddCoursesContainer {
+    .form-control:focus {
+        border: 1px solid $primary !important;
+        background-color: $offWhite;
+    }
+}
+
+#addQuizContainer {
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .select2-container--default
+        .select2-selection--single
+        .select2-selection__rendered {
+        padding: 10;
+    }
+
+    .select2-container--default .select2-selection--single {
+        border: 1px solid $primary;
+        border-radius: 5px;
+        height: 50px;
+    }
+
+    .select2-container--default
+        .select2-selection--single
+        .select2-selection__arrow {
+        margin: 10px;
+    }
+}
+
+.step-one {
+    .select2-container--default .select2-selection--single {
+        background-color: #fff;
+        border: 1px solid #d4d4d4;
+        border-radius: 5px;
+        height: 40px;
+    }
+
+    .select-input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .select2-container--default
+        .select2-selection--single
+        .select2-selection__rendered {
+        color: #5a5a5a;
+        line-height: 37px;
+    }
+
+    .select2-container--default
+        .select2-selection--single
+        .select2-selection__arrow {
+        margin: 5px;
+    }
+}
+
+/* summernote fix style */
+
+.note-popover .popover-content .note-color .dropdown-toggle,
+.card-header.note-toolbar .note-color .dropdown-toggle {
+    width: 20px;
+    padding-left: 0px;
+    height: 23px;
+
+    &:after {
+        right: 7px;
+    }
+}
+
+.note-toolbar .dropdown-toggle {
+    &:after {
+        top: -8px;
+    }
+}
+
+body.menu-collapsed {
+    #AddCoursesForm .sf-controls {
+        width: 95.5%;
+        left: 60px;
+    }
+
+    #AddCoursesForm .step-one {
+        width: 70%;
+    }
+}
+
+/* Edit Style */
+
+#edit-course-tabs {
+    border: 0;
+
+    .nav-item {
+        width: 33.333333%;
+        margin: 0;
+        text-align: center;
+
+        .nav-link {
+            padding: 12px 20px;
+            display: block;
+            background-color: rgba(1, 39, 63, 0.7);
+            border: 0;
+            color: #fff;
+            border-radius: 0;
+        }
+
+        .nav-link.active {
+            padding: 12px 20px;
+            background-color: #01273f;
+            border-radius: 0;
+            border: 0;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}
+
+#edit-course-tabs-content {
+    padding: 2rem;
+}
+
+#EditCoursesForm {
+    margin: 0;
+
+    .form-control:focus {
+        border: 1px solid $primary !important;
+        background-color: $offWhite;
+    }
+}
+
+.EditCoursesFormSubmit {
+    width: 100%;
+    text-align: right;
+    background-color: $primary;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 82%;
+    left: 240px;
+    right: 0;
+    z-index: 999;
+
+    button {
+        background-color: #fff;
+        color: $primary;
+        padding: 7px 35px;
+        font-weight: bold;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: #fff;
+            color: $primary;
+        }
+    }
+}
+
+body.menu-collapsed .EditCoursesFormSubmit {
+    width: 95.5%;
+    left: 60px;
+}
+
+// hide delete from frist lesson
+
+.weekLessonContainer {
+    .deleteInputRow {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.weekLessonWrapper {
+    .weekLessonContainer {
+        .deleteInputRow {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.week-error-container {
+    display: none;
+}
+
+.week-error {
+    p {
+        display: flex !important;
+        text-transform: capitalize;
+        color: #f74646;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+    }
+}
+
+#allMastersTable_wrapper,
+#allSpecializationsTable_wrapper {
+    .dataTables_scrollBody {
+        min-height: 300px;
+    }
+    .dropdown .dropdown-menu {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .dropdown .dropdown-menu .dropdown-item {
+        padding: 10px 20px;
+        width: auto;
+        cursor: inherit;
+    }
+}
+
+// #nav-general-tab,
+// #nav-material-tab,
+// #nav-exams-tab {
+//     width: 33%;
+//     text-align: center;
+// }
+
+#myTab .nav-item {
+    width: 49.5%;
+    text-align: center;
+}
+
+.tabs-style {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 0;
+    background-color: #fff;
+
+    li {
+        flex: 1;
+        text-align: center;
+        border: 0;
+        margin: 0;
+
+        a {
+            border: 0;
+            border-radius: 0;
+            color: $primary;
+            font-weight: bold;
+        }
+
+        .nav-link.active {
+            border-bottom: 3px solid #f1dd7e;
+            color: #fff !important;
+            padding: 15px;
+            background-color: #01273fe0 !important;
+        }
+    }
+}
+
+.pills-style {
+    margin-top: 10px;
+}
+
+.exercise-container {
+    span.select2-container {
+        width: 100% !important;
+    }
+}
+
+#exerciseElementContainer {
+    .card-header {
+        background-color: #01273f !important;
+    }
+}
+
+#exercise_1 {
+    .card-block {
+        .form-group {
+            padding: 0 !important;
+            margin: 10px 0 !important;
+        }
+    }
+}

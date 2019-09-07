@@ -1,0 +1,717 @@
+$zidniFont: 'Open Sans',
+sans-serif;
+
+
+$primary: #01273f;
+
+$primaryOverlay: rgba(1, 39, 63, 0.3);
+$secondaryOverlay: rgba(1, 39, 63, 0.7);
+
+
+$secondary: #f1dd7e;
+
+$profileColor: #36515e;
+
+$facebook : #3b5998;
+
+$white : #FFFFFF;
+$black : #000000;
+$offWhite : #fafafa;
+$borderColor: #e5e5e5;
+$lightGray: #e4e2e2;
+
+$borderRadius : 5px;
+
+
+$zIndex1: 1;
+$zIndex2: 10;
+$zIndex3: 100;
+$zIndex4: 1000;
+$zIndex5: 10000;
+
+
+:focus {
+    outline: none;
+}
+
+
+
+
+
+
+.form-control:focus {
+
+    border: 1px solid $primary !important;
+    background-color: $offWhite;
+
+}
+
+
+body.offwhite {
+
+    background-color: $offWhite;
+
+}
+
+
+.kill-padding {
+
+    padding: 0 !important;
+
+}
+
+@mixin pagesHeader {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+    padding: 0;
+    position: relative;
+}
+
+
+@mixin pagesBreadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0rem;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+@mixin pagesOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $primaryOverlay;
+}
+
+
+@mixin cardStyle {
+
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: $zidniShadow;
+
+}
+
+
+@mixin borderTop {
+
+    border-top: 3px solid $secondary;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+}
+
+
+@mixin pagesTitleStyle {
+
+
+    padding: 2rem 0 0.5rem 0;
+    text-align: center;
+    text-transform: capitalize;
+    color: #01273f;
+    font-weight: bold;
+    border-bottom: 4px solid $lightGray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    margin: auto;
+    margin-bottom: 2rem;
+
+}
+
+
+@mixin mainTranstion {
+
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.icon::after {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+$fontAwesome: "Font Awesome 5 Free";
+
+$zidniShadow : 0 1px 6px rgba(57, 73, 76, 0.35);
+
+
+.btn:focus {
+    outline: none;
+}
+
+
+a:hover {
+    text-decoration: none !important;
+    opacity: .85;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.wasilaDev {
+
+    color: #FFF;
+    text-decoration: none;
+
+
+    &:hover {
+
+        color: #FFF;
+
+    }
+
+}
+
+
+/* fade image in after load */
+
+
+.lazyload,
+.lazyloading {
+    opacity: 1;
+
+}
+
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 800ms;
+}
+
+.pages-header {
+
+    .pages-header-img {
+
+        width: 100%;
+        height: 100% !important;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+
+
+    }
+
+    .pages-header-info {
+
+        color: $white
+    }
+
+
+    .pages-header-students {
+
+        color: $white
+    }
+
+
+    .preview-button {
+
+        background-color: transparent;
+        border: 1px solid #EEE;
+        padding: .5rem 4rem;
+        color: #FFF;
+
+        i {
+
+            padding-right: 10px;
+        }
+
+    }
+
+}
+
+
+
+.sticky {
+    position: fixed !important;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: $zIndex1;
+}
+
+
+
+
+
+
+.preload-content,
+.courses-preload-content {
+
+    position: relative;
+
+}
+
+
+/* Preloader */
+
+#preloader,
+.courses-load {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+}
+
+#status,
+.courses-load-status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 12%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url("/images/loading-1.svg");
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+}
+
+
+
+
+
+.modal-open {
+    overflow: hidden !important;
+
+    .modal {
+
+        @include media(">phone", "<=tablet") {
+            padding-right: 0 !important;
+        }
+
+
+    }
+
+}
+
+
+.stuck {
+    position: fixed;
+    top: 0;
+}
+
+
+.wp-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.waypoints-infinite-item {
+    height: 500px;
+}
+
+
+
+.infinite-more-link {
+
+    width: 15%;
+    background-color: #01273f;
+    margin: auto;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+
+
+// modal back
+
+
+// .modal {
+
+//     z-index: 999999 !important;
+
+// }
+
+
+// .modal-backdrop {
+
+//     z-index: 100000 !important;
+//     background-color: #000000 !important;
+// }
+
+
+// main small title styles
+
+
+
+.small-title {
+
+    padding: 15px;
+    border-bottom: 1px solid $lightGray;
+
+    h4 {
+
+        font-size: 16px;
+        margin: 0;
+        font-weight: bold;
+    }
+
+}
+
+
+
+// desabled checkboxs in notifcations
+
+
+
+.notifications-menu {
+
+    input[type=checkbox][disabled] {
+
+        cursor: none;
+        display: none;
+    }
+
+    .notifications-stat {
+
+        width: 25px;
+
+    }
+
+}
+
+
+
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    width: 25px;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-bottom: 0px;
+    margin-left: -81px;
+    padding: 7px;
+    width: 100px;
+    border-radius: 3px;
+    background-color: rgb(1, 39, 63);
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 11px;
+    line-height: 1;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid #000;
+    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+// 404 page
+
+
+
+#errorPage {
+
+    background-color: $primary;
+    color: #fff;
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: url(/images/footer-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: bottom;
+
+
+
+
+    p {
+        font-size: 2em;
+        text-align: center;
+        font-weight: 100;
+
+        @include media(">phone", "<=tablet") {
+
+
+            font-size: 1.5rem;
+            padding: 0 1rem;
+
+
+        }
+
+    }
+
+    h1 {
+        font-size: 15rem;
+        font-weight: bold;
+        margin: 0px;
+        text-shadow: 0px 3px 0px #7f8c8d;
+        text-align: center;
+
+
+        @include media(">phone", "<=tablet") {
+
+
+            font-size: 10rem;
+
+        }
+
+    }
+
+
+    .error-links-container {
+
+        ul {
+
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+
+            @include media(">phone", "<=tablet") {
+
+                justify-content: start;
+                align-items: start;
+                padding: 0 2rem;
+                flex-wrap: wrap;
+            }
+
+
+            li {
+
+                @include media(">phone", "<=tablet") {
+
+                    margin: 5px 0;
+                    flex: 50% 1;
+
+                }
+
+                a {
+
+                    color: #FFF;
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+}
+
+
+
+
+#all-categoty-preloader {
+
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fafafa;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    display: none;
+
+
+
+    #all-categoty-status {
+
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        background-image: url(/images/loading-1.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+
+}
+
+
+
+
+
+// flexflep
+
+
+
+.flexflep {
+
+    @include media(">phone", "<=tablet") {
+
+        flex-direction: column-reverse !important;
+
+    }
+
+}
+
+
+
+// Scroll to top 
+
+
+#scroll {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: $primary;
+    text-indent: -9999px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    -webkit-transform: translateY(80px) scale(0.7);
+    transform: translateY(80px) scale(0.7);
+}
+
+
+.scroll-revel {
+    opacity: 0.5 !important;
+    -webkit-transform: translateY(0px) scale(1) !important;
+    transform: translateY(0px) scale(1) !important;
+
+    &:hover {
+        opacity: 1 !important;
+    }
+
+}
+
+#scroll span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #ffffff;
+}
+
+#scroll:hover {
+    background-color: rgba(1, 39, 63, 0.9);
+
+}
+
+
+
+// Comeing Soon
+
+.comeing-soon-overlay{
+
+    position: absolute;
+    height: 100%;
+    width: 97%;
+    background-color: #ffffffed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+
+        text-transform: uppercase;
+        letter-spacing: 10px;
+
+    }
+
+}
+
+
+
+
+// Feb 2019
+
+
+.wstliststy02{
+
+    width: 33.33333% !important;
+
+}

@@ -1,0 +1,147 @@
+// NAVBAR
+
+html,
+body {
+    direction: rtl !important;
+}
+
+.smllogo {
+    float: right;
+}
+
+// SIDE NAV
+
+.university-nav-container
+    .wsmenu-list
+    .university-nav-dropdown
+    .account-nav
+    .main-user-name
+    i {
+    left: -4px;
+}
+
+.list-group {
+    padding: 0;
+}
+
+.university-student-card .card-body .list-group-item span {
+    text-align: right;
+}
+
+.university-student-card .card-body .card-title {
+    text-align: right;
+}
+
+.university-student-card .card-body .card-title a {
+    float: left;
+}
+
+.student-lesson-card
+    .card-body
+    .card-content
+    .list-group-item
+    span:nth-child(1) {
+    text-align: right;
+}
+
+.student-lesson-card
+    .card-body
+    .card-content
+    .list-group-item
+    span:nth-child(2) {
+    text-align: right;
+}
+
+.student-lesson-card .card-body .card-title {
+    text-align: right;
+}
+
+.wsmenu-submenu li a {
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+}
+
+.university-nav-container
+    .wsmenu-list
+    .university-nav-dropdown
+    .wsmenu-submenu {
+    left: -50px;
+}
+
+.student-pills .nav-item:nth-child(1) {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+.student-pills .nav-item:nth-child(2) {
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+.student-pills {
+    padding: 0;
+}
+
+.student-resources {
+    .list-group-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+}
+
+// INTL
+
+.intl-tel-input {
+    direction: ltr;
+
+    .country-list {
+        right: 0;
+    }
+}
+
+.intl-tel-input.allow-dropdown .flag-container,
+.intl-tel-input.separate-dial-code .flag-container {
+    right: 0;
+    left: auto;
+}
+
+.intl-tel-input.allow-dropdown input,
+.intl-tel-input.allow-dropdown input[type="text"],
+.intl-tel-input.allow-dropdown input[type="tel"],
+.intl-tel-input.separate-dial-code input,
+.intl-tel-input.separate-dial-code input[type="text"],
+.intl-tel-input.separate-dial-code input[type="tel"] {
+    padding-left: 6px;
+    padding-right: 52px;
+    margin-left: 0;
+}
+
+.intl-tel-input .selected-flag .iti-arrow {
+    margin-right: 6px;
+}
+
+.new__student__container
+    form
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow,
+.edit__student__form
+    form
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    left: 7px;
+    right: 0;
+}
+
+.rating_1,
+.rating_2 {
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+}

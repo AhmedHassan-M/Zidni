@@ -1,0 +1,392 @@
+.my-courses-header{
+
+    height: 125px;
+    overflow: hidden;
+
+    h1{
+
+        text-align: left;
+
+    }
+
+}
+
+
+
+.my-courses-container{
+
+
+    background-color: $offWhite;
+    padding: 3rem 0;
+
+
+    .stuck {
+        position: fixed;
+        top: 10%;
+        width: 255px;
+    }
+
+    .stuck-stop{
+
+        position: absolute;
+        bottom: 0%;
+        width: 255;
+    
+    }
+
+
+    .my-courses-tabs{
+
+        @include cardStyle();
+        @include borderTop();
+
+        @include media(">phone", "<=tablet") {
+
+            margin-bottom: 2rem;
+
+        }
+
+        a{
+
+            border-radius: 0;
+            text-align: left;
+            padding: 15px 0px 15px 40px;
+            font-size: 14px;
+            color: $primary;
+            font-weight: bold;
+            opacity: 0.7;
+
+        }
+
+        a.active{
+
+            background-color: $primary;
+            color: #FFF;
+            opacity: 1;
+
+
+
+        }
+
+    }
+
+
+
+    .my-courses-master-tabs{
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        border-bottom: 0;
+
+        li{
+
+            flex: 1;
+
+            a{
+
+                border-radius: 0;
+                text-align: center;
+                padding: 15px;
+                font-size: 14px;
+                color: $primary;
+                font-weight: bold;
+                background-color: $lightGray;
+                opacity: 0.7;
+
+                @include media(">phone", "<=tablet") {
+
+                    height: 70px;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+            
+                    
+                }
+
+
+
+    
+            }
+    
+            a.active{
+    
+                background-color: $primary;
+                color: #FFF;
+                opacity: 1;
+    
+    
+            }
+    
+
+
+        }
+
+    }
+
+
+    .my-courses-tabs-content{
+
+        @include cardStyle();
+        @include borderTop();
+
+
+
+
+        .tab-pane{
+
+            padding-bottom: 5px;
+
+
+        }
+
+    }
+}
+
+
+
+.my-courses-item{
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    margin: 25px 15px;
+    background-color: $offWhite;
+
+    @include media(">phone", "<=tablet") {
+
+        flex-direction: column;
+    
+    }
+
+
+
+    .my-courses-item-image{
+
+        flex: 1;
+        @include media(">phone", "<=tablet") {
+            margin: 1rem 0;
+        }
+
+
+        img{
+
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            object-position: center;
+
+        }
+
+    }
+
+
+    .courses-list-overview{
+
+        font-size: 14px;
+        height: 45px;
+        overflow: hidden;
+    }
+
+
+    .my-courses-item-progressbar{
+
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: normal;
+        height: 200px;
+        padding: 0 2rem;
+
+
+        @include media(">phone", "<=tablet") {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            text-align: center;
+        
+        }
+
+
+        h4{
+
+            font-size: 16px;
+            font-weight: 600;
+
+        }
+
+
+        .progress{
+
+            margin: 0;
+
+            @include media(">phone", "<=tablet") {
+                margin: 3rem 0;
+            }
+
+
+        }
+
+
+        .my-courses-item-button{
+
+            text-align: right;
+
+            @include media(">phone", "<=tablet") {
+                text-align: center;
+            }
+
+            .go-to-course-button{
+
+                background-color: transparent;
+                color: $primary;
+                font-size: 14px;
+                padding: 8px 35px;
+
+            }
+
+            .get-certificate{
+
+                font-size: 14px;
+                padding: 8px 35px;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+.progress .progressbar-front-text {
+    padding: 0 14px;
+    text-align: unset;
+}
+
+
+
+.recommended-courses-container{
+
+    background-color: $offWhite;
+
+
+    .recommended-courses{
+
+        @include cardStyle();
+        @include borderTop();
+        box-shadow: none !important;
+
+
+        .recommended-courses-title{
+
+            padding: 15px;
+            border-bottom: 1px solid $lightGray;
+
+            h4{
+
+                font-size: 16px;
+                margin: 0;
+                font-weight: bold;
+            }
+
+        }
+
+
+        .slider-container{
+
+            margin: 20px 0;
+
+        }
+
+    }
+
+}
+
+
+
+.empty-tab-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 135px;
+
+
+    h4{
+
+        font-size: 16px;
+        margin-bottom: 25px;
+
+    }
+
+
+    button{
+
+        font-size: 16px;
+        padding: 7px 25px;
+
+    }
+
+
+}
+
+
+
+
+.all-master-courses-list{
+
+
+
+
+
+    .my-courses-item{
+
+        background-color: #EEE;
+        border-radius: 5px;
+        padding: 1rem;
+
+    }
+    
+    
+    
+    
+    .my-courses-item-image img{
+
+        height: 250px;
+        width: 250px;
+
+
+
+        
+    }
+
+
+    .my-courses-item-progressbar{
+
+        height: 250px;
+
+
+        @include media(">phone", "<=tablet") {
+    
+            height: auto;
+
+        }
+
+
+    }
+
+
+    .my-courses-item .my-courses-item-progressbar h4 {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+}

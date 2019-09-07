@@ -1,0 +1,108 @@
+.mobile-menu{
+
+    .menu-toggle{
+
+
+        top: 3px;
+        left: 10px;
+        position: relative;
+
+        i{
+
+            font-size: 24px;
+            color: #FFF;
+        
+
+        }
+
+    }
+
+}
+
+
+.header-navbar .navbar-nav .open-navbar-container{
+
+    @include media(">phone", "<=tablet") {
+    
+        padding-top: 0.625rem;
+        position: relative;
+        top: -35px;
+
+    }
+
+
+    i{
+
+        @include media(">phone", "<=tablet") {
+    
+            color: #FFF;
+            font-size: 24px;    
+        }
+
+    }
+
+}
+
+
+.vertical-overlay-menu .main-menu .navigation > li > a > span {
+
+    @include media(">phone", "<=tablet") {
+        font-size: 13px;
+    }
+}
+
+.vertical-overlay-menu .main-menu .navigation li.has-sub > a:not(.mm-next):after{
+
+    @include media(">phone", "<=tablet") {
+
+        top: 5px;
+
+    }
+}
+
+
+.content-header-left{
+
+    @include media(">phone", "<=tablet") {
+
+        margin-bottom: 0 !important;
+
+    }
+
+    p{
+
+        @include media(">phone", "<=tablet") {
+
+            margin-bottom: 0 !important;
+    
+        }
+    
+
+    }
+
+
+}
+
+
+.content-header-right{
+
+    @include media(">phone", "<=tablet") {
+
+        margin: 10px 0;
+
+    }
+
+}
+
+
+@media (max-width: 992px){
+
+    .sf-t1 .sf-nav-smmob.sf-nav-top .sf-nav .sf-nav-step, .sf-t1 .sf-nav-smmob.sf-nav-bottom .sf-nav .sf-nav-step {
+        width: 85px;
+    }
+
+    .sf-t1.sf-wizard .sf-btn {
+        padding: 0px 40px;
+    }
+
+}

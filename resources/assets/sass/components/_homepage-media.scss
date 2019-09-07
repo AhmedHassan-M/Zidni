@@ -1,0 +1,293 @@
+
+
+.wsmain{
+
+    @include media(">phone", "<=tablet") {
+        background-color: $primary !important;
+        background-image: url('/images/footer-background.png');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+    
+}
+
+
+
+.wsmenu > .wsmenu-list > li > a{
+
+    @include media(">phone", "<=tablet") {
+        border-color: #eeeeee0f;
+    }
+
+
+}
+
+
+
+.modalButtons a{
+
+    @include media(">phone", "<=tablet") {
+        padding: 0 !important;
+    }
+
+}
+
+
+.modalButtons button{
+
+    @include media(">phone", "<=tablet") {
+        width: 200px;
+    }
+
+}
+
+
+
+.smallogo{
+
+    @include media(">phone", "<=tablet") {
+        background-color: $primary;
+    }
+
+    img{
+
+
+        @include media(">phone", "<=tablet") {
+            height: 45px;
+        }
+        
+
+    }
+
+}
+
+
+
+.animated-arrow{
+
+    @include media(">phone", "<=tablet") {
+
+        padding: 20px 35px 16px 0px;
+        
+    }
+
+
+    span, span:before, span:after{
+
+        @include media(">phone", "<=tablet") {
+
+            background: $white;
+            
+        }
+
+    }
+
+}
+
+
+.wsoffcanvasopener .animated-arrow span {
+
+
+    @include media(">phone", "<=tablet") {
+
+        background-color: transparent !important;
+        
+    }
+    
+}
+
+
+
+.callusicon{
+
+    @include media(">phone", "<=tablet") {
+
+        color: #FFF;
+        top: 23px;
+        font-size: 20px;
+        
+    }
+
+}
+
+
+.topmenusearch input {
+
+
+
+    @include media(">phone", "<=tablet") {
+
+        font-size: 12px;
+        
+    }
+
+}
+
+
+
+.wsmenu .wsmenu-list > li{
+
+    @include media(">phone", "<=tablet") {
+
+        background-color: transparent;
+        
+    }
+
+
+    .wsmenu-arrow{
+
+        @include media(">phone", "<=tablet") {
+
+            color: #FFF;
+            font-size: 12px;
+            position: relative;
+            top: 6px !important;
+            
+        }
+
+    }
+
+    .ws-activearrow i{
+
+        @include media(">phone", "<=tablet") {
+
+            color: #FFF;
+            font-size: 12px;
+            position: relative;
+            top: -6px !important;
+            
+        }
+
+    }
+
+}
+
+
+
+#signinModalButton{
+
+    @include media(">phone", "<=tablet") {
+
+background-color: transparent;
+        
+    }
+
+
+}
+
+
+
+.wsmenu-list > li.wssearchbar{
+
+    @include media(">tablet", "<=desktop") {
+
+        width: 40% !important;
+                
+    }
+
+}
+
+
+.smllogo img {
+
+
+    @include media(">tablet", "<=desktop") {
+
+        height: 40px;
+
+                
+    }
+}
+
+
+.notifications,
+.account{
+
+    @include media(">phone", "<=tablet") {
+
+        display: none !important;
+                
+    }
+
+}
+
+
+
+
+.main-hero-section .main-hero-img{
+
+    top: 0;
+
+
+    img{
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+
+    }
+
+
+}
+
+
+// typehead.js
+
+
+#multiple-datasets .tt-menu{
+
+    @include media(">phone", "<=tablet") {
+
+                
+    }
+
+}
+
+
+
+// mobile only
+
+
+
+.mobile-only{
+
+    display: none !important;
+
+
+    @include media(">phone", "<=tablet") {
+
+        display: block !important;
+
+    }
+
+
+    .mobile-notifications-icon{
+
+        width: auto !important;
+        background-color: #ec5152;
+        padding: .35em 0.5em;
+        font-weight: 600 !important;
+        line-height: 1 !important;
+        color: #fff !important;
+        text-align: center !important;
+        vertical-align: unset;
+        border-radius: 50%;
+        height: 20px !important;
+        width: 20px !important;
+        font-size: 12px !important;
+        position: relative;
+
+        &:after{
+
+            display: none !important;
+
+        }
+
+    }
+
+}
+
+

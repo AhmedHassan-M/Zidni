@@ -1,0 +1,1143 @@
+
+#course-content-section{
+
+    padding: 2rem 0;
+
+}
+
+
+
+.course-content-header {
+    height: 120px;
+    overflow: hidden;
+}
+
+.course-content-container {
+    padding: 2rem 0;
+}
+
+.three-sec-ease-in-out {
+    -webkit-transition: width 3s ease-in-out;
+    -moz-transition: width 3s ease-in-out;
+    -ms-transition: width 3s ease-in-out;
+    -o-transition: width 3s ease-in-out;
+    transition: width 3s ease-in-out;
+}
+
+
+#progressbar-section{
+
+    padding: 2rem 0;
+
+}
+
+.progress .progressbar-front-text {
+    display: block;
+    width: auto !important;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    top: -13px;
+    position: relative;
+    color: $white;
+    font-weight: bold;
+    z-index: 999;
+}
+
+.progress-left {
+    left: 13px;
+}
+
+.progress-back-container {
+    height: 20px;
+    width: 100%;
+    position: relative;
+    top: -33px;
+    z-index: 99;
+}
+
+.progress-back {
+    background-color: #01273f;
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    z-index: -1;
+    height: 20px;
+    width: 45px;
+    text-align: center;
+    span {}
+    i {
+        position: absolute;
+        top: 11px;
+        font-size: 15px;
+        color: #01273f;
+        left: 40%;
+    }
+}
+
+.progress .progress-bar {
+    position: relative;
+    overflow: visible;
+    line-height: 20px;
+    border-radius: 5px;
+}
+
+.progress {
+    background-color: #e9ecef;
+    color: #e9ecef;
+    overflow: visible;
+    position: relative;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.progress-container {
+    height: 70px;
+    .progress-title {
+        h5 {
+            margin-bottom: 40px;
+            margin-left: 5px;
+            width: auto;
+        }
+    }
+}
+
+.get-certificate-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+    flex-direction: column;
+    .get-certificate {}
+}
+
+.course-content-container {
+
+    padding: 0 0;
+    background-color: $offWhite;
+
+
+    iframe{
+        width: 100%;
+        height: 400px;
+
+        @include media(">phone", "<=tablet") {
+
+            height: auto;
+    
+        }
+    
+
+    }
+
+}
+
+
+
+
+#accordion{
+
+
+    @include cardStyle();
+    @include borderTop();
+
+
+    .ui-accordion-content {
+        padding: 0;
+        border-top: 0;
+    }
+
+    .nav-tabs {
+        display: block;
+        border: 0;
+        position: relative;
+        width: 100%;
+    }
+
+
+
+
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        color: #01273f;
+        border-color: 0;
+        border: 0;
+        background-color: #EEE;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+        border-color: #FFF;
+    }
+
+    .ui-icon {
+
+        text-indent: 0;
+        background-image: none;
+
+    }
+
+
+    .accordion-close:before{
+
+        font-family: $fontAwesome;
+        font-size: 12px;
+        line-height: 1;
+        left: 1px;
+        opacity: 1;
+        position: relative;
+        color: $primary;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-weight: 900;
+        content: "\f0da";
+        float: right;
+        color: $primary;
+        
+   
+
+    }
+
+
+    .accordion-open:before{
+
+        font-family: $fontAwesome;
+        font-size: 12px;
+        line-height: 1;
+        left: 1px;
+        opacity: 1;
+        position: relative;
+        color: $primary;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-weight: 900;
+        content: "\f0d7";
+        float: right;
+        color: #FFF;
+
+    }
+
+
+}
+
+
+#accordion{
+
+
+
+    .ui-accordion-header{
+
+        border: 0;
+        border-radius: 0;
+        padding: 12px;
+        margin: 0;
+
+    }
+
+    .ui-accordion-header-icon{
+
+        float: right;
+        top: 6px;
+
+    }
+
+}
+
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #003eff/*{borderColorActive}*/;
+    background: rgba(1, 39, 63, 0.95); /*{bgColorActive}*/ /*{bgImgUrlActive}*/ /*{bgActiveXPos}*/ /*{bgActiveYPos}*/ /*{bgActiveRepeat}*/;
+    font-weight: normal/*{fwDefault}*/;
+    color: #ffffff/*{fcActive}*/;
+}
+
+
+
+
+.ui-accordion-content{
+
+    [data-simplebar="init"] .simplebar-scroll-content, [data-simplebar="init"] .simplebar-content {
+
+        overflow-x: hidden !important;
+    }
+    
+
+    .main-lessons-container{
+
+
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        max-height: 250px;
+        height: 250px;
+
+
+        .main-lessons-item{
+
+            padding: 15px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            -webkit-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+            border-bottom: 1px solid #EEE;
+
+            &:hover{
+
+                background-color: #ccc;
+
+            }
+
+        }
+
+
+        .main-lessons-item-name{
+
+            span{
+
+                font-size: 16px;
+                font-weight: 400;
+
+            }
+
+        }
+
+
+        .main-lessons-item-status,
+        .main-lessons-item-time{
+
+            $color--green: #7ac142;
+            $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
+            display: none;
+            
+            .checkmark__circle {
+              stroke-dasharray: 166;
+              stroke-dashoffset: 166;
+              stroke-width: 2;
+              stroke-miterlimit: 10;
+              stroke: $color--green;
+              fill: none;
+              animation: stroke .3s $curve forwards;
+            }
+            
+            .checkmark {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              display: block;
+              stroke-width: 4 ;
+              stroke: #fff;
+              stroke-miterlimit: 10;
+              margin: 10% auto;
+              animation: fill .2s ease-in-out .2s forwards, scale .3s ease-in-out .3s both;
+            }
+
+            .checkmark.done{
+
+                box-shadow: inset 0px 0px 0px $color--green;
+
+
+            }
+            
+            .checkmark__check {
+              transform-origin: 50% 50%;
+              stroke-dasharray: 48;
+              stroke-dashoffset: 48;
+              animation: stroke .3s $curve .3s forwards;
+            }
+            
+            @keyframes stroke {
+              100% {
+                stroke-dashoffset: 0;
+              }
+            }
+            
+            @keyframes scale {
+              0%, 100% {
+                transform: none;
+              }
+              50% {
+                transform: scale3d(1.1, 1.1, 1);
+              }
+            }
+            
+            @keyframes fill {
+              100% {
+                box-shadow: inset 0px 0px 0px 30px $color--green;
+              }
+            }
+
+
+
+        }
+
+
+        .courses-lesson-done{
+
+            .main-lessons-item-status{
+
+                display: block;
+
+            }
+
+        }
+
+
+        .quiz-done{
+
+            .main-lessons-item-time{
+
+                display: block;
+
+            }
+
+        }
+
+
+
+    }
+
+}
+
+
+
+.course-video{
+
+    @include cardStyle();
+    @include borderTop();
+
+    margin: 0 10px;
+
+
+    @include media(">phone", "<=tablet") {
+
+        width: max-content;
+        margin: auto;
+        padding: 0;
+
+        
+    }
+
+
+
+    .redirect_counter-container{
+
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        height: 403px;
+        width: 93.5%;
+        background-color: rgba(1, 39, 63, .5);
+
+
+        @include media(">phone", "<=tablet") {
+
+            height: 154px;
+            width: 74.5%;
+    
+            
+        }
+
+
+        h2{
+
+            color: #FFF;
+            text-transform: uppercase;
+            margin: 2rem;
+            font-weight: bold;
+
+            @include media(">phone", "<=tablet") {
+
+                font-size: 15px;
+                margin: 1rem;
+        
+                
+            }
+
+
+        }
+
+
+        #redirect_counter_time{
+
+            color: #FFF;
+            font-size: 4rem;
+            margin: 2rem;
+            font-weight: bold;
+
+            @include media(">phone", "<=tablet") {
+
+                font-size: 35px;
+                margin: 0rem;
+        
+                
+            }
+
+
+        }
+
+
+        #redirect_counter_cancel{
+
+            font-weight: 400;
+            padding: .3rem 3rem;
+
+
+            @include media(">phone", "<=tablet") {
+
+                padding: 0.2rem 1rem;
+                font-size: 14px;
+        
+                
+            }
+
+        }
+
+    }
+
+
+}
+
+
+.course-info{
+
+    @include cardStyle();
+    @include borderTop();
+
+    margin: 1rem 10px;
+
+
+    #course-info-tabs{
+
+
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 1rem;
+        border-bottom: 1px solid $lightGray;
+
+        .nav-item{
+
+            text-align: left;
+
+            .nav-link{
+
+                border-radius: 0px;
+                background-color: #FFF;
+                color: $primary;
+                border-bottom: 3px solid $white;
+                padding: 5px 0;
+                margin-right: 2rem;
+
+            }
+
+            .nav-link.active{
+
+                background-color: #FFF;
+                color: $primary;
+                border-bottom: 3px solid $primary;
+    
+            }
+
+
+        }
+
+
+    }
+
+}
+
+
+
+.course-overview-container{
+
+    padding: 15px;
+
+    p{
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+.course-instructor-container{
+
+    padding: 15px;
+
+    p{
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+
+
+
+.course-qiuz-container{
+
+    @include cardStyle();
+    @include borderTop();
+    display: none;
+
+}
+
+
+
+
+
+
+/* loading styles */
+.load-box {
+    height: 516px; /* add height of wizard that you usually expect */
+    position: relative;
+    overflow: hidden;
+    overflow-x: hidden !important;
+}
+.load-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px; /* half width of loading text - to center */
+    margin-top: -20px; /* half height of loading text - to center */
+}
+.load-wizard-box {visibility: hidden;}
+/* end loading styles */
+
+/* spinner from http://tobiasahlin.com/spinkit/, you can use image or another css spiner or erase this if loading text is enought*/
+.cssspinner {
+    width: 40px;
+    height: 40px;
+    background-color: $primary;
+
+    border-radius: 100%;  
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% { -webkit-transform: scale(0) }
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% { 
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    } 100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+/* end of spinner */
+
+
+
+.course-qiuz-container{
+
+    .quiz-question-title{
+
+        margin: 0 20px !important;
+        width: auto !important;
+    }
+
+
+    .sf-viewport {
+
+        -webkit-transition: height 0.3s;
+        transition: height 0.3s;
+    }
+
+
+    .sf-btn {
+        margin: 0 20px !important;
+    }
+    
+    
+    .quiz-answer-container{
+    
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+        margin: 0 20px;
+
+
+        .quiz-answer-item{
+
+            height: 75px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+
+
+            label.error{
+
+                position: absolute;
+
+            }
+
+        }
+    }
+
+}
+
+
+
+.quiz-counter{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .quiz-counter-items{
+
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+
+
+        li{
+
+            margin: 0 5px;
+        
+        }
+
+    }
+
+
+}
+
+
+.quiz-error-message{
+
+    p{
+
+        font-size: 12px;
+        margin: 0 20px;
+        color: #ff4040;
+        font-weight: 500;
+
+    }
+
+}
+
+
+
+
+
+.quiz-result-container{
+
+    @include cardStyle();
+    @include borderTop();
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+
+    .quiz-result-img{
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        img{
+
+            height: 100px;
+            width: 100px;
+
+            display: none;
+
+        }
+
+    }
+
+
+    .quiz-result-status{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+
+    }
+
+
+    .quiz-result-numbers{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+
+
+        h4{
+
+            span{
+
+                font-weight: bold;
+
+            }
+
+        }
+
+    }
+
+
+    .quiz-result-button{
+
+        margin: 1rem 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+
+        button{
+
+            padding: 0;
+            border-radius: 5px;
+            margin: 0;
+            display: none;
+
+
+            a{
+
+                color: #FFF;
+                display: flex;
+                height: auto;
+                width: 100%;
+                padding: 7px 3rem;
+            }
+
+        }
+
+
+    }
+
+}
+
+
+.courses-load-1{
+
+    margin: 0 10px;
+
+    .courses-load-status-1{
+
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 0;
+    
+    }
+
+}
+
+
+.courses-load-0{
+
+    .courses-load-status-0{
+
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 0;
+    
+    }
+
+}
+
+
+
+.main-lessons-container{
+
+    .active{
+
+        .main-lessons-item{
+
+            background-color: #ccc;
+
+        }
+
+    }
+
+}
+
+
+
+
+.quiz-tab-content{
+
+    .main-lessons-container{
+
+        height: auto;
+
+        #activeQuizTab{
+
+            cursor: pointer;
+            
+        }
+
+    }
+
+}
+
+
+
+
+.active-week-header{
+
+
+    background-color: $primary !important;
+    color: #FFFFFF !important;
+
+    .accordion-close:before{
+
+        color: #FFF !important;
+
+    }
+
+
+}
+
+
+.active-week-content{
+
+
+
+}
+
+
+
+.progress-vid{
+
+    background-color: transparent;
+    box-shadow: none;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 6px;
+    z-index: 999;
+    .progress-bar-vid{
+
+        background-color: $secondary;
+        // border-top: 1px solid #01273f80;
+        // border-bottom: 1px solid #01273f80;
+        transition:width 1s;
+        -webkit-transition:width 1s;
+        -moz-transition: width 1s;
+
+        span{
+
+            display: none;
+
+        }
+
+    }
+
+}
+
+
+
+#master-courses-links{
+
+
+    @include cardStyle();
+    @include borderTop();
+    margin-top: 20px;
+
+
+    .main-lessons-container{
+
+        padding: 0;
+        list-style-type: none;
+        margin: 0;
+    
+
+        .main-lessons-item-name{
+
+            h3{
+
+                padding: 15px;
+                font-size: 16px;
+                font-weight: 400;
+                margin: 0;
+                border-bottom: 1px solid #EEE;
+            }
+
+        }
+
+
+        .main-lessons-items{
+
+            height: 300px;
+
+            ul{
+
+                padding: 0;
+                list-style-type: none;
+                margin: 0;
+                
+                
+                .main-lessons-items-item{
+
+                    padding: 0 15px;
+
+
+                    .latest-activity-item{
+
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        @include mainTranstion();
+                        padding: 1rem 0;
+                        border-bottom: 1px solid $lightGray;
+            
+            
+            
+            
+            
+            
+                        .latest-activity-item-img{
+            
+                            flex: 1;
+                            position: relative;
+            
+                            img{
+            
+                                height: 100px;
+                                width: 100%;
+                                border-radius: 5px;
+                                object-fit: cover;
+                                object-position: center;
+            
+                            }
+            
+            
+                            .play-icon{
+            
+                                position: absolute;
+                                height: 100%;
+                                width: 100%;
+                                top: 0;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: rgba(1, 39, 63, 0.45);
+                                border-radius: 5px;
+                                @include mainTranstion();
+                                opacity: 0;
+            
+            
+            
+                                i{
+            
+                                    font-size: 28px;
+                                    color: #FFF;
+            
+                                }
+            
+                            }
+            
+                        }
+            
+                        
+            
+            
+                        &:hover{
+            
+                            @include mainTranstion();
+            
+                            .play-icon{
+                
+                                opacity: 1;
+            
+                                @include mainTranstion();
+            
+                            }
+                
+                        } 
+            
+            
+            
+            
+            
+                        .latest-activity-item-title{
+            
+                            flex: 2;
+            
+                            h5{
+            
+                                margin-bottom: 0;
+                                font-size: 14px;
+                                font-weight: 600;
+                                margin-left: 15px;
+            
+                            }
+            
+            
+                            p{
+            
+                                margin-left: 15px;
+                                margin-bottom: 0;
+                                font-size: 11px;
+                                font-weight: 600;
+                                margin-top: 8px;
+            
+            
+                            }
+            
+            
+                        }
+            
+                    }
+
+
+
+
+
+
+
+
+                }
+
+
+            }
+
+        }
+    
+    }
+
+}

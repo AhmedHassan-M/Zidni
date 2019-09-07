@@ -1,0 +1,181 @@
+
+.contactus-header{
+
+    height: 150px;
+    overflow: hidden;
+
+    @include media(">phone", "<=tablet") {
+
+        height: 125px;
+                
+    }
+
+
+    h1{
+
+        text-align: left;
+
+    }
+
+}
+
+
+.all-instructor-container{
+
+    .all-instructor-title{
+
+        @include pagesTitleStyle()
+
+    }
+
+
+    
+
+}
+
+
+.contactus-container{
+
+    background-color: $offWhite;
+
+    .contactus-title{
+
+        @include pagesTitleStyle();
+        margin-bottom: 0.8rem !important;
+
+    }
+
+    .contactus-text{
+
+        text-align: center;
+        font-size: 10px;
+        color: #808080;
+
+
+    }
+    
+
+}
+
+
+#contactus-form-container{
+
+    @include cardStyle();
+    @include borderTop();
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 1rem;
+
+
+    .contactus-form{
+
+        width: 100%
+
+    }
+
+
+    .form-group textarea.error{
+
+        border: 1px solid #D8000C !important;
+    }
+
+}
+
+
+
+
+
+.contactus-info-card{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+
+
+    .card{
+
+        @include cardStyle();
+        @include borderTop();
+
+
+        .card-item{
+
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin: 1.5rem 0;
+
+
+            i{
+
+                margin-right: 15px;
+
+            }
+
+
+            p{
+
+
+
+            }
+
+        }
+
+    }
+
+}
+
+
+#zidni-map-container{
+
+    height: 400px;
+
+
+    #content{
+
+        .firstHeading{
+
+            margin-top: 1rem;
+
+        }
+
+
+        #bodyContent{
+
+            margin: 1rem 0;
+
+            p{
+
+                font-size: 14px;
+
+                b{
+
+                    font-weight: bold;
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+    .map-zidni-logo{
+
+        width: 100%;
+        text-align: center;
+
+        img{
+
+            max-width: 12%;
+            margin-top: 10px;
+        }
+    }
+
+}

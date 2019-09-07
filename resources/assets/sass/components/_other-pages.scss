@@ -1,0 +1,28 @@
+.content-pages-container{
+
+    background-color: $offWhite;
+    padding: 2rem 0;
+
+}
+
+
+
+.content-pages-header{
+
+    height: auto;
+    overflow: hidden;
+
+    @include media(">phone", "<=tablet") {
+
+        height: 125px;
+                
+    }
+
+    h1{
+
+        text-align: left;
+
+    }
+
+
+}

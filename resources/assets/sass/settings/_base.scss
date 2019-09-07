@@ -1,0 +1,56 @@
+body{
+
+    padding-top: 60px;
+    font-family: $zidniFont !important;
+    padding-right: 0 !important;
+    
+}
+
+
+
+
+
+.kill-padding{
+
+    padding: 0 !important;
+
+}
+
+
+.development-mode-container{
+
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    max-width: none;
+    max-height: none;
+    position: fixed;
+    overflow: hidden !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    z-index: 1000003 !important;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px;
+    border-top-left-radius: 2px;
+    background-color: #01273f;
+    text-align: center;
+
+    span{
+
+        color: #FFF;
+        padding: 15px;
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 10px 0;
+    }
+
+
+}
+
+
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button-bevel !important;
+}
+

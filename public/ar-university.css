@@ -1,0 +1,17 @@
+html,
+body {
+  direction: rtl !important;
+}
+
+.smllogo {
+  float: right;
+}
+
+.wsmenu-list {
+  flex-direction: row-reverse;
+}
+
+.wsmenu-list .account-link {
+  justify-content: flex-end;
+}
+

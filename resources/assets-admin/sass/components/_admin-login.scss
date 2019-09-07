@@ -1,0 +1,227 @@
+.form-control:focus {
+    color: #495057;
+    background-color: #FFFFFF;
+    border-color: transparent;
+    outline: 0;
+    border: 1.5px solid #ced4da;
+    box-shadow: none;
+}
+
+/* Change the white to any color ;) */
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 0px white inset;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-submit {
+    position: relative;
+}
+
+.ajax-loading {
+    display: none;
+    margin: 0;
+    text-align: center;
+    background-color: #01273f;
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    width: 100%;
+    svg path,
+    svg rect {
+        fill: #FFF;
+    }
+}
+
+.registrationModal__contant {
+    label {
+        color: $primary;
+        font-weight: 700
+    }
+}
+
+/* validation */
+
+
+
+
+
+#accordion{
+
+    input.error {
+        border: 1px solid rgba(226, 148, 152, 1) !important;
+    }
+
+}
+
+
+form {
+    input.error {
+        border: 1px solid #D8000C !important;
+    }
+    label.error {
+        font-size: 12px;
+        color: #D8000C;
+        font-weight: normal;
+        margin: 0 2px;
+    }
+}
+
+.forget-password-link,
+.instructor-forget-password-link {
+    display: flex;
+    justify-content: flex-end;
+    margin: .2rem 0;
+    a {
+        font-size: 11px;
+        cursor: pointer;
+        margin-right: 2px;
+    }
+}
+
+.forget-password-signin {
+
+    display: none;
+
+    .forget-password-text {
+        text-align: center;
+        position: relative;
+        h4 {
+            margin: 1rem 0;
+        }
+        p {
+            font-size: 14px;
+        }
+        svg{
+
+            position: absolute;
+            left: 10px;
+            top: 5px;
+
+        }
+
+        a{
+
+            cursor: pointer;
+            float: left;
+        }
+    }
+
+
+
+
+}
+
+
+#showPassword{
+
+    float: right;
+    font-size: 11px;
+    position: relative;
+    top: 10px;
+    margin-right: 2px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+.login-page-container {
+    background-color: wheat;
+    height: 100vh;
+    background-image: url('/images/hero-background.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+
+    .admin-login-overlay{
+
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(1, 39, 63, 0.50);
+
+    }
+
+
+    .card-header {
+        padding: .75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: rgba(0,0,0,.03);
+        border-bottom: 1px solid rgba(0,0,0,.125);
+        text-align: center;
+    }
+
+    .card{
+
+        width: 35%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+
+        @include media(">phone", "<=tablet") {
+    
+            width: 90%;
+
+        }
+
+        @include media(">tablet", "<=desktop") {
+            width: 60%;
+        }
+    
+
+    }
+
+    .card-body{
+
+        padding: 1rem;
+
+    }
+
+
+    #adminShowPassword,
+    #instructorShowPassword{
+
+
+        float: right;
+        font-size: 11px;
+        position: relative;
+        top: 10px;
+        margin-right: 2px;
+        cursor: pointer;
+    }
+
+    .card-footer{
+
+        text-align: center;
+
+        p{
+
+            font-size: 12px;
+            margin: 5px 0;
+        }
+
+    }
+    
+}
