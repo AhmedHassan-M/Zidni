@@ -38,7 +38,7 @@
         "jquery-simple-upload": "^1.1.0",
         "jquery-ui": "^1.12.1",
         "jquery-ui.accordion.multiple": "^1.0.1",
-        "jquery-validation": "^1.17.0",
+        "jquery-validation": "^1.19.3",
         "js-cookie": "^2.2.0",
         "lazyload": "^2.0.0-beta.2",
         "lazysizes": "^4.0.4",
